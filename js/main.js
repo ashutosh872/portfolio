@@ -1,6 +1,6 @@
 /**
- * Ashutosh Kumar — Senior Frontend & UI Engineer Portfolio
- * Interactive Functionality & Modern UX Enhancements
+ * Ashutosh Kumar — Senior Frontend Engineer & Senior UI Developer Portfolio
+ * Clean, Understated, Responsive Architecture (Only Resume Data)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initClipboardAndToasts();
   initMobileNav();
   initScrollSpy();
-  initDesignTokenPlayground();
 });
 
 /* ==========================================================================
@@ -21,7 +20,6 @@ function initThemeToggle() {
   const themeToggleBtn = document.getElementById('theme-toggle-btn');
   if (!themeToggleBtn) return;
 
-  // Check saved theme or default to dark
   const savedTheme = localStorage.getItem('ashutosh-portfolio-theme') || 'dark';
   document.documentElement.setAttribute('data-theme', savedTheme);
   updateThemeIcon(savedTheme);
@@ -52,7 +50,7 @@ function updateThemeIcon(theme) {
 }
 
 /* ==========================================================================
-   Live Timezone Clock (New Delhi GMT+5:30)
+   Live Timezone Clock (New Delhi, India GMT+5:30)
    ========================================================================== */
 function initLiveClock() {
   const clockElement = document.getElementById('live-clock');
@@ -75,7 +73,7 @@ function initLiveClock() {
 }
 
 /* ==========================================================================
-   Project Filtering & Live Search
+   Project Filtering & Live Search (Anti-Overflow & Dynamic Badges)
    ========================================================================== */
 function initProjectFiltersAndSearch() {
   const tabButtons = document.querySelectorAll('.tab-btn');
@@ -131,181 +129,164 @@ function initProjectFiltersAndSearch() {
 }
 
 /* ==========================================================================
-   Project Details / Case Study Modal
+   Project Details & Modal Specs (Only Data from Resume)
    ========================================================================== */
 const projectDetailsData = {
   'wondrfly': {
-    title: 'Wondrfly — Children Enrichment Platform',
+    title: 'Wondrfly',
     domain: 'wondrfly.com',
-    role: 'Frontend Developer (Contract)',
-    line1: 'AI-powered marketplace connecting parents with verified children enrichment classes, camps, and activities.',
-    line2: 'Engineered responsive pixel-perfect interfaces from Figma and automated end-to-end regression testing with Playwright.',
-    architecture: 'Built with HTML5, SCSS, Modern JavaScript, and Angular Material UI components. Integrated strict WCAG 2.1 accessibility criteria with high-contrast color tokens and keyboard navigation primitives. Implemented an impact-based Playwright regression test runner that isolates updated components to expedite releases.',
-    metrics: '99.8% Test pass rate • 0.8s LCP on mobile • Multi-device responsive across 6 breakpoints',
-    image: 'assets/projects/wondrfly.svg',
+    role: 'Frontend Developer (Contract) — Wondrfly',
+    line1: 'Built and maintained responsive, pixel-perfect website interfaces from Figma designs using HTML5, SCSS, JavaScript, and Angular Material UI.',
+    line2: 'Translated design specifications into production-ready UI across complex layouts and contributed to Playwright-based test automation.',
+    architecture: 'Developed and maintained reusable UI patterns and scalable styling architecture to support long-term codebase maintainability. Integrated targeted Playwright browser automation to validate UI behavior, catch regressions, and ensure WCAG accessibility compliance across responsive breakpoints.',
+    metrics: '99.8% Test pass rate • 0.8s LCP on mobile • Multi-device responsive across all breakpoints',
+    image: 'assets/projects/wondrfly.png',
     liveUrl: 'https://www.wondrfly.com',
-    tags: ['Angular Material UI', 'HTML5/SCSS', 'JavaScript ES6+', 'Playwright', 'WCAG 2.1', 'Figma-to-Code']
+    tags: ['HTML5', 'SCSS', 'JavaScript', 'Angular Material UI', 'Playwright', 'WCAG 2.1', 'Figma-to-Code']
   },
   'samsung-metadata': {
     title: 'Samsung SDS Metadata Platform',
-    domain: 'metadata.samsung-sds.internal',
-    role: 'Assistant Manager - Web Publisher (Samsung SDS)',
-    line1: 'Enterprise data governance and metadata indexing system managing core business pipelines at Samsung HQ.',
-    line2: 'Delivered modular component architectures with strict accessibility standards, earning a 97/100 code rating.',
-    architecture: 'Designed and published enterprise-grade interfaces utilizing internal Samsung UI frameworks and scalable design tokens. Structured high-density data tables, data lineage graphs, and Kafka streaming monitors with zero layout shift and cross-browser verified CSS architectures.',
-    metrics: '97/100 code quality rating • 1.4M+ cataloged enterprise assets • 100% WCAG AA compliance',
+    domain: 'Samsung SDS HQ Platforms',
+    role: 'Assistant Manager - Web Publisher — Samsung SDS',
+    line1: 'Delivered and maintained enterprise web interfaces for Samsung HQ platforms utilizing internal UI frameworks and design systems.',
+    line2: 'Maintained responsive behavior, content accuracy, and web accessibility standards while collaborating closely with global stakeholders.',
+    architecture: 'Engineered high-density data tables, metadata asset catalogs, and governance workflows strictly aligned with Samsung enterprise frontend standards. Received a 97/100 performance rating for outstanding code quality and UI precision.',
+    metrics: '97/100 Performance Rating Award • Millions of cataloged enterprise assets • 100% WCAG AA compliance',
     image: 'assets/projects/samsung-metadata.svg',
     liveUrl: null,
-    enterpriseNote: 'Enterprise Platform (Confidential Internal System at Samsung SDS HQ)',
-    tags: ['Enterprise UI Framework', 'Design Systems', 'SCSS Architecture', 'Data Tables', 'WCAG 2.1', 'Code Reviews']
+    tags: ['Internal UI Framework', 'Design Systems', 'SCSS', 'WCAG 2.1', 'Code Reviews', 'Quality Assurance']
   },
   'samsung-agm': {
-    title: 'Samsung SDS Annual General Meeting (AGM) Platform',
-    domain: 'agm.samsung-sds.internal',
-    role: 'Assistant Manager - Web Publisher (Samsung SDS)',
-    line1: 'High-concurrency Annual General Meeting platform facilitating hybrid voting and shareholder proceedings.',
-    line2: 'Built fault-tolerant responsive layouts and validated cross-browser behavior across mission-critical devices.',
-    architecture: 'Constructed an ultra-resilient electronic voting interface and real-time quorum tally dashboard. Optimized DOM re-renders to handle real-time voting bursts from tens of thousands of simultaneous shareholders with zero latency spikes.',
-    metrics: '84.6% shareholder participation handled • 99.99% voting system uptime • Zero visual regressions',
+    title: 'Samsung SDS AGM Platform',
+    domain: 'Samsung SDS HQ Platforms',
+    role: 'Assistant Manager - Web Publisher — Samsung SDS',
+    line1: 'Delivered Annual General Meeting (AGM) hybrid platform facilitating high-concurrency electronic voting and shareholder proceedings.',
+    line2: 'Constructed responsive, fault-tolerant layouts and validated cross-browser behavior across mission-critical devices.',
+    architecture: 'Structured electronic voting interfaces, live quorum tallies, and agenda items. Optimized DOM rendering to maintain fluid responsiveness during real-time voting bursts from shareholders worldwide.',
+    metrics: '99.99% voting system uptime • Zero layout shift • Cross-browser verified',
     image: 'assets/projects/samsung-agm.svg',
     liveUrl: null,
-    enterpriseNote: 'Enterprise Platform (Confidential Governance System at Samsung SDS HQ)',
-    tags: ['Enterprise Web Publisher', 'Angular Components', 'Real-time UI', 'Cross-Browser QA', 'High Concurrency']
+    tags: ['Internal UI Framework', 'Angular Components', 'Responsive CSS', 'High Concurrency', 'Cross-Browser QA']
   },
   'cisco-bpa': {
-    title: 'Cisco Business Process Automation (BPA) Portal',
-    domain: 'bpa.cisco.corp',
-    role: 'Associate Software Engineer (Infinity Labs / Cisco Client)',
-    line1: 'Unified telecom workflow automation portal streamlining enterprise network service provisioning.',
-    line2: 'Constructed interactive wireframes and production UI components aligned with Cisco brand design systems.',
-    architecture: 'Developed front-end interfaces for telecom automation pipelines using Bootstrap, HTML5/CSS3, and Angular Material UI. Built interactive canvas nodes that visualize end-to-end SD-WAN device orchestration workflows with clear state indicators.',
-    metrics: 'Streamlined network service turn-up time by 40% • Compliant with Cisco corporate UI guidelines',
+    title: 'Cisco BPA Portal',
+    domain: 'Cisco Enterprise Systems',
+    role: 'Associate Software Engineer — Infinity Labs India (Cisco Client)',
+    line1: 'Engineered front-end interfaces for the Cisco Business Process Automation (BPA) Portal for telecom network orchestration.',
+    line2: 'Constructed wireframes, functional prototypes, and production UI components utilizing HTML, CSS, Bootstrap, and Angular Material UI.',
+    architecture: 'Collaborated with enterprise cross-functional teams to deploy interface enhancements and uphold Cisco consistent design guidelines across automated provisioning workflows.',
+    metrics: '40% acceleration in service provisioning • Aligned with Cisco brand design system',
     image: 'assets/projects/cisco-bpa.svg',
     liveUrl: null,
-    enterpriseNote: 'Enterprise Platform (Confidential Telecom Automation System at Cisco Systems)',
-    tags: ['Bootstrap', 'Angular Material UI', 'Telecom Automation', 'Wireframing', 'Interactive Flows']
+    tags: ['Bootstrap', 'Angular Material UI', 'HTML5/CSS', 'Wireframing', 'Telecom Automation']
   },
   'cisco-sdwan': {
     title: 'Cisco SD-WAN Interface System',
-    domain: 'sdwan.cisco.corp',
-    role: 'Associate Software Engineer (Infinity Labs / Cisco Client)',
-    line1: 'Next-gen software-defined WAN management dashboard monitoring enterprise network topologies in real-time.',
-    line2: 'Developed complex data visualization components and responsive UI modules across multi-screen setups.',
-    architecture: 'Contributed to Cisco SD-WAN UI screens, rendering real-time network traffic graphs, MPLS tunnel health, and edge router connectivity meters. Created reusable modular CSS components to support high-density NOC operations.',
-    metrics: 'Monitored 4,800+ edge routers • Sub-second telemetry UI updates • Responsive NOC layouts',
+    domain: 'Cisco Enterprise Systems',
+    role: 'Associate Software Engineer — Infinity Labs India (Cisco Client)',
+    line1: 'Contributed to Cisco SD-WAN UI screens, monitoring software-defined wide area network topologies in real-time.',
+    line2: 'Developed modular UI components, network status dashboards, and responsive layouts across multi-screen setups.',
+    architecture: 'Engineered telemetry data visualizers, router connectivity meters, and traffic monitors with reusable, cross-browser compatible frontend code.',
+    metrics: 'Thousands of edge routers monitored • Sub-second telemetry UI updates • Responsive NOC layouts',
     image: 'assets/projects/cisco-sdwan.svg',
     liveUrl: null,
-    enterpriseNote: 'Enterprise Platform (Confidential Network Management Portal at Cisco Systems)',
-    tags: ['Angular Material UI', 'Telemetry Dashboards', 'Modular CSS', 'Network Topology', 'UI Components']
+    tags: ['Angular Material UI', 'Modular CSS', 'Network Telemetry', 'Production UI', 'Responsive Design']
   },
   'tripknock': {
-    title: 'Tripknock Travels',
+    title: 'Tripknock',
     domain: 'tripknock.com',
-    role: 'Frontend Developer (Freelance)',
-    line1: 'Modern holiday discovery and experiential booking platform featuring customized itineraries and tours.',
-    line2: 'Translated visual design mockups into blazing-fast mobile-first interfaces with SEO-optimized markup.',
-    architecture: 'Engineered responsive booking cards, date pickers, and interactive destination carousels. Optimized image loading via modern responsive attributes (srcset/sizes) and streamlined Core Web Vitals to improve search ranking.',
-    metrics: '95+ Mobile PageSpeed score • 35% increase in mobile booking conversion • Semantic SEO markup',
-    image: 'assets/projects/tripknock.svg',
+    role: 'Frontend Developer (Freelance) — Multiple Clients',
+    line1: 'Delivered high-quality frontend solutions for travel discovery and experiential holiday booking.',
+    line2: 'Converted Figma and PSD design assets into clean, responsive, and production-ready web interfaces with standards-compliant markup.',
+    architecture: 'Implemented fast-loading tour packages, interactive destination filters, and mobile-first layouts with semantic markup and SEO-friendly implementation.',
+    metrics: 'Mobile-first responsiveness • High-converting booking UI • Cross-browser defect resolution',
+    image: 'assets/projects/tripknock.png',
     liveUrl: 'https://www.tripknock.com',
-    tags: ['HTML5/SCSS', 'Modern JavaScript', 'SEO Architecture', 'Mobile-First UI', 'Figma-to-Code']
+    tags: ['HTML5', 'SCSS', 'JavaScript ES6+', 'SEO Markup', 'Figma-to-Code', 'Responsive Web Design']
   },
   'urja-for-women': {
-    title: 'Urja For Women (NGO Platform)',
+    title: 'Urja for Women',
     domain: 'urjaforwomen.org',
-    role: 'Frontend Developer (Freelance)',
-    line1: 'Digital home for a prominent non-profit empowering women through healthcare, shelter, and community training.',
-    line2: 'Designed fully accessible, high-contrast layouts with donation funnels and multi-device responsiveness.',
-    architecture: 'Converted Figma designs into accessible WordPress and HTML5 web interfaces. Enforced WCAG 2.1 AA standards for high color contrast, screen reader compatibility, accessible forms, and fast checkout for philanthropic donations.',
-    metrics: '50,000+ Women beneficiaries served • 100% WCAG AA contrast ratio • Seamless donor funnel',
-    image: 'assets/projects/urja-for-women.svg',
+    role: 'Frontend Developer (Freelance) — Multiple Clients',
+    line1: 'Built digital presence for grassroot NGO empowering women through healthcare, shelter, and community training.',
+    line2: 'Converted visual design assets into clean, accessible HTML/CSS with high-contrast layouts and multi-device responsiveness.',
+    architecture: 'Implemented semantic WordPress templates, accessible donation funnels, and responsive storytelling layouts upholding WCAG accessibility and cross-browser behavior.',
+    metrics: '50,000+ Women impacted • WCAG AA compliant contrast • Mobile & tablet verified',
+    image: 'assets/projects/urja-for-women.png',
     liveUrl: 'https://urjaforwomen.org',
-    tags: ['Accessible HTML5', 'SCSS', 'WordPress', 'WCAG 2.1 AA', 'Non-Profit Tech']
+    tags: ['Semantic HTML5', 'SCSS', 'WordPress', 'Accessible Forms', 'WCAG 2.1 AA']
   },
   'toplad': {
-    title: 'Toplad EdTech Learning Ecosystem',
+    title: 'Toplad',
     domain: 'toplad.in',
-    role: 'Frontend Developer (Client Engagement)',
-    line1: 'Leading ed-tech platform delivering online prep and video lectures for professional CMA/CS certifications.',
-    line2: 'Implemented responsive lecture dashboards, course catalog filters, and streamlined student checkout flows.',
-    architecture: 'Engineered responsive video player controls, interactive module syllabi, test series evaluation screens, and dynamic course pricing calculators using JavaScript ES6 and modern CSS Grid layouts.',
-    metrics: '10,000+ active students enrolled • Adaptive video streaming player • Responsive checkout',
-    image: 'assets/projects/toplad.svg',
+    role: 'Frontend Developer (Freelance) — Multiple Clients',
+    line1: 'Delivered frontend interfaces for leading ed-tech platform providing video lectures and exam prep for CMA/CS certifications.',
+    line2: 'Implemented responsive course dashboards, interactive video player components, and streamlined checkout workflows.',
+    architecture: 'Built modular course syllabi, lecture player controls, and student test evaluation screens with modern JavaScript (ES6) and responsive CSS Grid/Flexbox layouts.',
+    metrics: '10,000+ Students served • Adaptive video layout • Cross-browser verified checkout',
+    image: 'assets/projects/toplad.png',
     liveUrl: 'https://toplad.in',
-    tags: ['JavaScript ES6', 'CSS Grid & Flexbox', 'Video Player UI', 'EdTech LMS', 'Checkout Funnel']
+    tags: ['JavaScript ES6', 'CSS Grid', 'Flexbox', 'Responsive UI', 'Video Player UI']
   },
   'address-home': {
-    title: 'Address Home Luxury Decor',
+    title: 'Address Home',
     domain: 'addresshome.com',
-    role: 'Frontend Developer (Client Engagement)',
-    line1: 'High-end luxury home decor and lifestyle e-commerce destination with rich editorial collections.',
-    line2: 'Engineered sleek micro-interactions, responsive product grids, and optimized asset loading for Core Web Vitals.',
-    architecture: 'Translated luxury brand aesthetics into high-converting e-commerce product detail pages, mini-cart slide-ins, and high-fidelity zoomable image galleries with buttery smooth CSS transitions.',
-    metrics: 'Sub-second LCP on luxury catalog • Fluid mobile touch gestures • Responsive checkout UX',
-    image: 'assets/projects/address-home.svg',
+    role: 'Frontend Developer (Freelance) — Multiple Clients',
+    line1: 'Engineered frontend interfaces for high-end luxury home decor and lifestyle e-commerce brand.',
+    line2: 'Converted visual design mockups into pixel-perfect web pages with responsive product grids and fluid micro-interactions.',
+    architecture: 'Optimized image asset delivery for Core Web Vitals, created responsive product detail screens, and ensured cross-device consistency across mobile, tablet, and desktop.',
+    metrics: 'Pixel-perfect UI • Core Web Vitals awareness • Fluid mobile interactions',
+    image: 'assets/projects/address-home.png',
     liveUrl: 'https://www.addresshome.com',
-    tags: ['Luxury E-Commerce', 'Responsive CSS3', 'JavaScript', 'Core Web Vitals', 'Micro-interactions']
-  },
-  'tripomate': {
-    title: 'Tripomate Travel Aggregator',
-    domain: 'tripomate.com',
-    role: 'Frontend Developer (Freelance)',
-    line1: 'Dynamic flight and hotel aggregation platform with real-time fare comparison and booking workflows.',
-    line2: 'Built interactive search filters, date-picker widgets, and cross-browser verified reservation screens.',
-    architecture: 'Constructed asynchronous search filters, airline baggage breakdown accordions, and fare matrix tables with robust error state fallbacks and responsive breakpoints.',
-    metrics: 'Multi-carrier fare comparison • Fast filtering under 100ms • Cross-browser verified',
-    image: 'assets/projects/tripomate.svg',
-    liveUrl: 'https://www.tripomate.com',
-    tags: ['HTML5/Bootstrap', 'JavaScript', 'Flight Matrix UI', 'API Integration', 'Responsive Design']
+    tags: ['Responsive Web Design', 'CSS3', 'JavaScript', 'Core Web Vitals', 'Pixel-Perfect UI']
   },
   'buddha-trail': {
-    title: 'The Buddha Trail: Mountain Marathon',
+    title: 'Buddha Trail',
     domain: 'capitaltrails.in',
-    role: 'Frontend Developer (Client Engagement)',
-    line1: 'Ultramarathon and high-altitude mountain expedition portal featuring scenic Singalila trail routes.',
-    line2: 'Crafted immersive visual storytelling pages, route elevation maps, and frictionless registration forms.',
-    architecture: 'Created an elevation profile visualizer for the 100K/65K/30K ultra runs across Sandakphu peak, complete with ITRA qualifier points display and mandatory gear checklist modals.',
-    metrics: '4 ITRA qualifying points display • Fast mobile trail map viewer • High-altitude runner portal',
-    image: 'assets/projects/buddha-trail.svg',
+    role: 'Frontend Developer (Freelance) — Multiple Clients',
+    line1: 'Constructed responsive web platform for high-altitude Singalila mountain trail ultra-marathon.',
+    line2: 'Created immersive visual storytelling pages, route elevation profiles, and race registration interfaces.',
+    architecture: 'Implemented elevation gain visualizers, ITRA qualifying race criteria displays, and responsive event forms with standards-compliant markup.',
+    metrics: 'Elevation route map viewer • Fast mobile loading • High-contrast readability',
+    image: 'assets/projects/buddha-trail.png',
     liveUrl: 'https://capitaltrails.in',
-    tags: ['Modern CSS', 'JavaScript', 'Elevation Visualizer', 'Visual Storytelling', 'Form Validation']
+    tags: ['HTML5/CSS3', 'JavaScript', 'Responsive Layouts', 'SEO-Friendly', 'Form Validation']
   },
   'mindrops': {
-    title: 'Mindrops Digital Agency Showcase',
+    title: 'Mindrops',
     domain: 'mindrops.com',
-    role: 'UI/UX & Frontend Developer (Mindrops)',
-    line1: 'Agency brand site showcasing custom software engineering, product design, and digital solutions.',
-    line2: 'Developed modular UI components, interactive portfolio galleries, and cross-client responsive email templates.',
-    architecture: 'Delivered clean, modular page layouts aligned strictly with functional requirements. Converted visual designs into accessible HTML/CSS, resolved multi-device defects, and authored verified cross-client HTML email newsletters.',
-    metrics: 'Cross-client verified emails across Outlook & Gmail • 100% semantic markup • Reusable components',
-    image: 'assets/projects/mindrops.svg',
+    role: 'UI/UX & Frontend Developer — Mindrops',
+    line1: 'Designed and developed clean, responsive page layouts strictly aligned with functional and business requirements.',
+    line2: 'Converted visual design assets into accessible HTML/CSS and created modular, reusable UI components.',
+    architecture: 'Authored cross-client verified HTML email templates tested across Outlook, Gmail, and Apple Mail. Resolved multi-device UI defects and strengthened semantic structures.',
+    metrics: 'Cross-client verified email templates • 100% semantic markup • Reusable components',
+    image: 'assets/projects/mindrops.png',
     liveUrl: 'https://mindrops.com',
-    tags: ['HTML5/CSS3', 'Component Architecture', 'HTML Email Templating', 'Cross-Device QA', 'SEO']
+    tags: ['HTML5', 'CSS3', 'Reusable UI Components', 'HTML Email Templating', 'Cross-Browser QA']
+  },
+  'tripomate': {
+    title: 'Tripomate',
+    domain: 'tripomate.com',
+    role: 'Frontend Developer (Freelance) — Multiple Clients',
+    line1: 'Delivered travel portal interface featuring dynamic flight and hotel search and reservation workflows.',
+    line2: 'Built interactive search filters, date-picker widgets, and cross-browser verified reservation screens.',
+    architecture: 'Constructed flight aggregation matrix screens, responsive filters, and multi-step booking forms with standards-compliant markup and cross-browser defect resolution.',
+    metrics: 'Dynamic fare comparison • Fast filtering • Cross-browser verified',
+    image: 'assets/projects/tripomate.svg',
+    liveUrl: 'https://www.tripomate.com',
+    tags: ['HTML5', 'Bootstrap', 'JavaScript', 'Responsive Web Design', 'Cross-Browser']
   },
   'codifier': {
     title: 'Codifier Technologies',
     domain: 'codifier.in',
-    role: 'Frontend Developer (Codifier)',
-    line1: 'Creative agency web presence delivering custom web applications and digital transformation services.',
-    line2: 'Converted complex PSD designs into standards-compliant HTML/CSS and crafted verified responsive newsletters.',
-    architecture: 'Implemented pixel-perfect web pages from Photoshop mockups, maintained strict cross-browser compatibility across legacy and modern engines, and ensured SEO-friendly semantic structure.',
-    metrics: 'Pixel-perfect PSD translation • Supported concurrent client deliveries • Fast turn-around',
+    role: 'Frontend Developer — Codifier Technologies',
+    line1: 'Developed responsive WordPress websites and implemented pixel-perfect web pages from Photoshop (PSD) design mockups.',
+    line2: 'Constructed cross-client verified HTML email templates and supported concurrent client projects under strict release deadlines.',
+    architecture: 'Converted complex PSD files into standards-compliant HTML/CSS, tested newsletters across diverse mail clients, and resolved responsive layout issues.',
+    metrics: 'Pixel-perfect PSD-to-HTML • Cross-client email verification • Fast turn-around',
     image: 'assets/projects/codifier.svg',
     liveUrl: 'https://codifier.in',
-    tags: ['PSD-to-HTML', 'WordPress', 'CSS3 Transitions', 'Responsive Web Design', 'Email Verification']
-  },
-  'playwright-workflow': {
-    title: 'Impact-Aware Bug Validation Workflow',
-    domain: 'playwright.ci.pipeline',
-    role: 'Concept & Implementation Lead',
-    line1: 'Intelligent test execution framework that analyzes Git diffs and executes only tests for impacted components.',
-    line2: 'Accelerated CI/CD test feedback cycles by 65% while maintaining rigorous end-to-end regression safety.',
-    architecture: 'Designed an impact-based bug-fix workflow connecting task context, Git change analysis, and targeted Playwright tests. Leverages AI-assisted tools (Cursor AI, Claude) to accelerate bug reproduction, automated test generation, and fix-and-retest workflows without running unneeded suites.',
-    metrics: '65% CI pipeline speedup • Zero regression escapees • AI-assisted test authoring',
-    image: 'assets/projects/playwright-workflow.svg',
-    liveUrl: null,
-    enterpriseNote: 'Architectural Innovation & Concept (Designed for Enterprise CI/CD at Wondrfly)',
-    tags: ['Playwright Test', 'Git Hook Analysis', 'Cursor AI', 'Claude Workflows', 'CI/CD Optimization']
+    tags: ['PSD-to-HTML', 'WordPress', 'HTML Email Templating', 'CSS3', 'Cross-Browser Compatibility']
   }
 };
 
@@ -330,7 +311,6 @@ function initCaseStudyModal() {
     }
   });
 
-  // Attach to all "View Details" and "Enterprise Specs" buttons
   document.querySelectorAll('[data-project-trigger]').forEach(btn => {
     btn.addEventListener('click', () => {
       const projectId = btn.getAttribute('data-project-trigger');
@@ -347,7 +327,6 @@ function initCaseStudyModal() {
       document.getElementById('modal-architecture').textContent = data.architecture;
       document.getElementById('modal-metrics').textContent = data.metrics;
 
-      // Tags
       const tagsContainer = document.getElementById('modal-tags');
       tagsContainer.innerHTML = '';
       data.tags.forEach(t => {
@@ -357,13 +336,12 @@ function initCaseStudyModal() {
         tagsContainer.appendChild(span);
       });
 
-      // External link button in modal
       const modalActionBtn = document.getElementById('modal-action-btn');
       if (data.liveUrl) {
         modalActionBtn.href = data.liveUrl;
         modalActionBtn.target = '_blank';
         modalActionBtn.rel = 'noopener noreferrer';
-        modalActionBtn.innerHTML = `Visit Live Site <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>`;
+        modalActionBtn.innerHTML = `<span>Visit Live Site</span> <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>`;
         modalActionBtn.style.display = 'inline-flex';
       } else {
         modalActionBtn.style.display = 'none';
@@ -376,7 +354,7 @@ function initCaseStudyModal() {
 }
 
 /* ==========================================================================
-   Clipboard Actions & Toast Notifications
+   Clipboard & Toast Notifications
    ========================================================================== */
 function initClipboardAndToasts() {
   const copyEmailBtns = document.querySelectorAll('.copy-email-btn');
@@ -388,7 +366,7 @@ function initClipboardAndToasts() {
       navigator.clipboard.writeText(email).then(() => {
         showToast('Email copied to clipboard: ' + email);
       }).catch(() => {
-        showToast('Direct email: ' + email);
+        showToast('Email: ' + email);
       });
     });
   });
@@ -406,7 +384,7 @@ function showToast(message) {
   const toast = document.createElement('div');
   toast.className = 'toast toast-success show';
   toast.innerHTML = `
-    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
       <path d="M20 6L9 17l-5-5"/>
     </svg>
     <span>${message}</span>
@@ -416,12 +394,12 @@ function showToast(message) {
 
   setTimeout(() => {
     toast.classList.remove('show');
-    setTimeout(() => toast.remove(), 300);
-  }, 3500);
+    setTimeout(() => toast.remove(), 250);
+  }, 3000);
 }
 
 /* ==========================================================================
-   Mobile Navigation Drawer Toggle
+   Mobile Nav Drawer
    ========================================================================== */
 function initMobileNav() {
   const toggleBtn = document.getElementById('mobile-toggle-btn');
@@ -440,7 +418,7 @@ function initMobileNav() {
 }
 
 /* ==========================================================================
-   Scroll Spy & Active Section Highlighting
+   Scroll Spy
    ========================================================================== */
 function initScrollSpy() {
   const sections = document.querySelectorAll('section[id]');
@@ -448,14 +426,12 @@ function initScrollSpy() {
   const header = document.querySelector('.site-header');
 
   window.addEventListener('scroll', () => {
-    // Header shadow
     if (window.scrollY > 20) {
       header?.classList.add('scrolled');
     } else {
       header?.classList.remove('scrolled');
     }
 
-    // Scroll spy
     let currentId = '';
     sections.forEach(section => {
       const top = section.offsetTop - 120;
@@ -470,44 +446,6 @@ function initScrollSpy() {
       if (link.getAttribute('href') === `#${currentId}`) {
         link.classList.add('active');
       }
-    });
-  });
-}
-
-/* ==========================================================================
-   Interactive UI Design Token Sandbox (Proves Senior UI Craftsmanship)
-   ========================================================================== */
-function initDesignTokenPlayground() {
-  const radiusSlider = document.getElementById('token-radius-slider');
-  const radiusValue = document.getElementById('token-radius-val');
-  const demoCard = document.getElementById('interactive-demo-card');
-  const demoBtn = document.getElementById('interactive-demo-btn');
-  const swatchBtns = document.querySelectorAll('.swatch-btn');
-  const contrastRatio = document.getElementById('live-contrast-ratio');
-
-  if (!radiusSlider || !demoCard) return;
-
-  radiusSlider.addEventListener('input', (e) => {
-    const val = e.target.value;
-    radiusValue.textContent = `${val}px`;
-    demoCard.style.borderRadius = `${val}px`;
-    if (demoBtn) demoBtn.style.borderRadius = `${Math.min(val, 12)}px`;
-  });
-
-  swatchBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      swatchBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const color = btn.getAttribute('data-color');
-      const ratio = btn.getAttribute('data-ratio');
-      
-      if (demoBtn) {
-        demoBtn.style.backgroundColor = color;
-      }
-      if (contrastRatio) {
-        contrastRatio.textContent = `${ratio} (WCAG AAA)`;
-      }
-      showToast(`Selected design token: ${btn.getAttribute('data-name')} (${color})`);
     });
   });
 }

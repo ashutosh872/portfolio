@@ -27,7 +27,7 @@
   <g transform="translate(184, 15)">
     <!-- Lock Icon -->
     <path d="M4 5.5V3.5C4 2.1 5.1 1 6.5 1s2.5 1.1 2.5 2.5v2m-6 0h7a1 1 0 011 1v4a1 1 0 01-1 1h-7a1 1 0 01-1-1v-4a1 1 0 011-1z" fill="none" stroke="#f59e0b" stroke-width="1.2" stroke-linecap="round"/>
-    <text x="18" y="9.5" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">Enterprise Internal Platform &bull; Sanitized Wireframe (NDA Compliant)</text>
+    <text x="18" y="9.5" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">Enterprise Internal Platform • Sanitized Wireframe (NDA Compliant)</text>
   </g>
 
   <!-- Body Content -->
@@ -42,14 +42,14 @@
     <rect width="800" height="46" fill="#000000" fill-opacity="0.35" />
     <line x1="0" y1="46" x2="800" y2="46" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1" />
     <rect x="28" y="13" width="20" height="20" rx="5" fill="url(#accent-cisco)" />
-    <text x="56" y="27" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700">Cisco &bull; Business Process Automation (BPA) Portal</text>
+    <text x="56" y="27" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700">Cisco • Business Process Automation (BPA) Portal</text>
     <text x="56" y="38" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="9">Enterprise Orchestration Canvas &amp; Form Architecture</text>
 
     <!-- NDA Security Pill Badge -->
     <g transform="translate(565, 12)">
       <rect width="205" height="22" rx="11" fill="#f59e0b" fill-opacity="0.15" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.4" />
       <circle cx="12" cy="11" r="3.5" fill="#f59e0b" />
-      <text x="22" y="15" fill="#fbbf24" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="600">INTERNAL PLATFORM &bull; NDA SAFE</text>
+      <text x="22" y="15" fill="#fbbf24" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="600">INTERNAL PLATFORM • NDA SAFE</text>
     </g>
 
     <!-- Canvas Workflow Blueprint -->
@@ -129,11 +129,11 @@
       <!-- Technical Telemetry Box (Sanitized) -->
       <g transform="translate(0, 264)">
         <rect width="744" height="104" rx="8" fill="#000000" fill-opacity="0.4" stroke="#ffffff" stroke-opacity="0.08" />
-        <text x="16" y="24" fill="#38bdf8" font-family="system-ui" font-size="9" font-weight="700">[ENGINEERING HIGHLIGHTS &bull; CISCO CLIENT PLATFORM]</text>
-        <text x="16" y="44" fill="#e2e8f0" font-family="system-ui" font-size="9.5">&bull; Modular component hierarchy built using HTML5, SCSS, Bootstrap, and Angular Material UI</text>
-        <text x="16" y="62" fill="#e2e8f0" font-family="system-ui" font-size="9.5">&bull; Strict Section 508 and WCAG 2.1 accessibility adherence across enterprise form controls</text>
-        <text x="16" y="80" fill="#e2e8f0" font-family="system-ui" font-size="9.5">&bull; Automated cross-browser test validation with zero layout clipping across enterprise viewports</text>
-        <text x="16" y="96" fill="#64748b" font-family="system-ui" font-size="8">🔒 Abstract architectural wireframe &bull; Confidential network parameters and operator data masked under NDA</text>
+        <text x="16" y="24" fill="#38bdf8" font-family="system-ui" font-size="9" font-weight="700">[ENGINEERING HIGHLIGHTS • CISCO CLIENT PLATFORM]</text>
+        <text x="16" y="44" fill="#e2e8f0" font-family="system-ui" font-size="9.5">• Modular component hierarchy built using HTML5, SCSS, Bootstrap, and Angular Material UI</text>
+        <text x="16" y="62" fill="#e2e8f0" font-family="system-ui" font-size="9.5">• Strict Section 508 and WCAG 2.1 accessibility adherence across enterprise form controls</text>
+        <text x="16" y="80" fill="#e2e8f0" font-family="system-ui" font-size="9.5">• Automated cross-browser test validation with zero layout clipping across enterprise viewports</text>
+        <text x="16" y="96" fill="#64748b" font-family="system-ui" font-size="8">🔒 Abstract architectural wireframe • Confidential network parameters and operator data masked under NDA</text>
       </g>
     </g>
   </g>

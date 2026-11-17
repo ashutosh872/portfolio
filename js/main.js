@@ -150,8 +150,8 @@ const projectDetailsData = {
     role: 'Assistant Manager - Web Publisher (Permanent Corporate) — Samsung SDS Global',
     line1: 'Delivered and maintained enterprise web interfaces for Samsung HQ platforms utilizing internal UI frameworks and design systems.',
     line2: 'Maintained responsive behavior, content accuracy, and web accessibility standards while collaborating closely with global stakeholders.',
-    architecture: 'Engineered high-density data tables, metadata asset catalogs, and governance workflows strictly aligned with Samsung enterprise frontend standards. Received a 97/100 performance rating for outstanding code quality and UI precision.',
-    metrics: '97/100 Performance Rating Award • Millions of cataloged enterprise assets • 100% WCAG AA compliance',
+    architecture: 'Engineered high-density data tables, metadata asset catalogs, and governance workflows strictly aligned with Samsung enterprise frontend standards. Received a 97/100 performance appraisal rating and formal management appreciation for outstanding code quality and UI precision.',
+    metrics: '97/100 Performance Rating & Appreciation • Millions of cataloged enterprise assets • 100% WCAG AA compliance',
     image: 'assets/projects/samsung-metadata.svg',
     liveUrl: null,
     tags: ['Internal UI Framework', 'Design Systems', 'SCSS', 'WCAG 2.1', 'Code Reviews', 'Quality Assurance']

@@ -242,14 +242,14 @@ const projectDetailsData = {
   },
   'buddha-trail': {
     title: 'Buddha Trail',
-    domain: 'capitaltrails.in',
+    domain: 'buddhatrail.com',
     role: 'Frontend Developer (Freelance) — Multiple Clients',
     line1: 'Constructed responsive web platform for high-altitude Singalila mountain trail ultra-marathon.',
-    line2: 'Created immersive visual storytelling pages, route elevation profiles, and race registration interfaces.',
+    line2: 'Created visual storytelling pages, route elevation profiles, and race registration interfaces.',
     architecture: 'Implemented elevation gain visualizers, ITRA qualifying race criteria displays, and responsive event forms with standards-compliant markup.',
     metrics: 'Elevation route map viewer • Fast mobile loading • High-contrast readability',
     image: 'assets/projects/buddha-trail.png',
-    liveUrl: 'https://capitaltrails.in',
+    liveUrl: 'https://www.buddhatrail.com/',
     tags: ['HTML5/CSS3', 'JavaScript', 'Responsive Layouts', 'SEO-Friendly', 'Form Validation']
   },
   'mindrops': {
@@ -273,19 +273,19 @@ const projectDetailsData = {
     architecture: 'Constructed flight aggregation matrix screens, responsive filters, and multi-step booking forms with standards-compliant markup and cross-browser defect resolution.',
     metrics: 'Dynamic fare comparison • Fast filtering • Cross-browser verified',
     image: 'assets/projects/tripomate.svg',
-    liveUrl: 'https://www.tripomate.com',
+    liveUrl: null,
     tags: ['HTML5', 'Bootstrap', 'JavaScript', 'Responsive Web Design', 'Cross-Browser']
   },
   'codifier': {
     title: 'Codifier Technologies',
-    domain: 'codifier.in',
+    domain: 'codifier.co',
     role: 'Frontend Developer — Codifier Technologies',
     line1: 'Developed responsive WordPress websites and implemented pixel-perfect web pages from Photoshop (PSD) design mockups.',
     line2: 'Constructed cross-client verified HTML email templates and supported concurrent client projects under strict release deadlines.',
     architecture: 'Converted complex PSD files into standards-compliant HTML/CSS, tested newsletters across diverse mail clients, and resolved responsive layout issues.',
     metrics: 'Pixel-perfect PSD-to-HTML • Cross-client email verification • Fast turn-around',
-    image: 'assets/projects/codifier.svg',
-    liveUrl: 'https://codifier.in',
+    image: 'assets/projects/codifier.png',
+    liveUrl: 'https://codifier.co/',
     tags: ['PSD-to-HTML', 'WordPress', 'HTML Email Templating', 'CSS3', 'Cross-Browser Compatibility']
   }
 };

@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore all 14 production websites and enterprise platforms built by Ashutosh Kumar, Senior Frontend Engineer & Senior UI Developer.">
-  <meta name="keywords" content="Ashutosh Kumar, Senior Frontend Engineer, Senior UI Developer, HTML5, SCSS, JavaScript, Angular Material UI, Playwright, WCAG, Responsive Web Design, Web Publisher">
+  <meta name="description" content="Explore all 14 production websites and enterprise platforms engineered by Ashutosh Kumar, Senior Frontend Engineer & Senior UI Developer.">
+  <meta name="keywords" content="Ashutosh Kumar, Senior Frontend Engineer, Senior UI Developer, Web Publisher, HTML5, SCSS, JavaScript, Angular Material UI, Playwright, WCAG, Responsive Web Design">
   <meta name="author" content="Ashutosh Kumar">
   <title>Selected Works & Enterprise Systems | Ashutosh Kumar</title>
 
   <!-- OpenGraph Meta -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Selected Works & Enterprise Systems | Ashutosh Kumar">
-  <meta property="og:description" content="Explore all 14 production websites and enterprise platforms built by Ashutosh Kumar, Senior Frontend Engineer & Senior UI Developer.">
+  <meta property="og:description" content="Explore all 14 production websites and enterprise platforms engineered by Ashutosh Kumar, Senior Frontend Engineer & Senior UI Developer.">
   <meta property="og:image" content="assets/projects/wondrfly.png">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -48,16 +48,17 @@
           </div>
         </a>
 
-        <!-- Navigation Links -->
+        <!-- Desktop Navigation Pill Tabs -->
         <ul class="nav-links" id="nav-links">
           <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="about.html" class="nav-link">About</a></li>
           <li><a href="works.html" class="nav-link active">Works</a></li>
           <li><a href="contact.html" class="nav-link">Contact</a></li>
-          <li><a href="assets/Ashutosh_Kumar_Resume.pdf" class="nav-link" download="Ashutosh_Kumar_Resume.pdf" style="color: var(--accent-primary);">📄 Download Resume</a></li>
+          <li class="mobile-only-resume"><a href="assets/Ashutosh_Kumar_ATS_Resume.html" target="_blank" rel="noopener noreferrer" class="nav-link">👁️ View Web ATS</a></li>
+          <li class="mobile-only-resume"><a href="assets/Ashutosh_Kumar_Resume.pdf" class="nav-link" download="Ashutosh_Kumar_Resume.pdf">📥 Download PDF (Resume)</a></li>
         </ul>
 
-        <!-- Nav Action Buttons -->
+        <!-- Nav Action Buttons: Differentiated CTAs -->
         <div class="nav-actions">
           <a href="https://github.com/ashutosh872" target="_blank" rel="noopener noreferrer" class="nav-github-btn" aria-label="GitHub Profile (ashutosh872)" title="GitHub: ashutosh872">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -82,6 +83,26 @@
             </svg>
           </button>
 
+          <!-- Differentiated Resume CTAs on Desktop -->
+          <div class="nav-resume-group">
+            <a href="assets/Ashutosh_Kumar_ATS_Resume.html" target="_blank" rel="noopener noreferrer" class="btn-nav-ats" title="View formatted ATS resume in browser (Zero Download)">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              <span>View ATS</span>
+            </a>
+
+            <a href="assets/Ashutosh_Kumar_Resume.pdf" download="Ashutosh_Kumar_Resume.pdf" class="btn-nav-pdf" title="Download official ATS resume PDF (Printable)">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download PDF</span>
+            </a>
+          </div>
+
           <button class="mobile-toggle-btn" id="mobile-toggle-btn" aria-label="Toggle Navigation Menu">
             <span></span>
             <span></span>
@@ -94,14 +115,14 @@
 
 
   <main id="main-content">
-    <!-- Page Hero -->
+    <!-- Compact Page Hero -->
     <section class="page-hero">
       <div class="container">
         <div class="section-tag">
-          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
             <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
           </svg>
-          <span>Selected Projects</span>
+          <span>Portfolio Catalog</span>
         </div>
         <h1 class="page-hero-title">Selected Works &amp; Enterprise Systems</h1>
         <p class="page-hero-desc">
@@ -110,13 +131,13 @@
       </div>
     </section>
 
-    <!-- Projects Section with Toolbar & All 14 Cards -->
+    <!-- Projects Section with Segmented Toolbar & All 14 Cards -->
     <section class="projects-section" id="projects" style="padding-top: 0;">
       <div class="container">
         
-        <!-- Toolbar -->
+        <!-- Segmented Filter Toolbar -->
         <div class="projects-toolbar">
-          <div class="filter-tabs" role="tablist">
+          <div class="filter-tabs" role="tablist" aria-label="Filter works">
             <button class="tab-btn active" data-filter="all" role="tab" aria-selected="true">
               <span>All Works</span>
               <span class="tab-badge" id="visible-projects-count">14</span>
@@ -139,6 +160,8 @@
             <input type="text" id="project-search-input" class="search-input" placeholder="Search by name, tech (SCSS, Playwright)..." aria-label="Search projects">
           </div>
         </div>
+
+        <div id="search-feedback" class="search-feedback-text" style="display: none;"></div>
 
         <div class="projects-grid" id="projects-grid">
 
@@ -641,7 +664,7 @@
       <div class="footer-content">
         <div class="footer-left">
           <span class="footer-copy">&copy; 2026 Ashutosh Kumar &bull; Senior Frontend Engineer &bull; Senior UI Developer</span>
-          <span class="footer-compliance">Crafted with semantic HTML5, SCSS/CSS3 Custom Properties &amp; ES6+ &bull; Zero dependencies &bull; Fully responsive</span>
+          <span class="footer-compliance">Crafted with semantic HTML5, modern SCSS/CSS3 &amp; ES6+ &bull; Zero dependencies &bull; 100% Responsive</span>
         </div>
 
         <div class="footer-social-links">

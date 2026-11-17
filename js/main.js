@@ -164,7 +164,7 @@ const projectDetailsData = {
     metrics: '97/100 Performance Rating & Appreciation • Millions of cataloged enterprise assets • 100% WCAG AA compliance',
     image: 'assets/projects/samsung-metadata.svg',
     liveUrl: null,
-    tags: ['Internal UI Framework', 'Design Systems', 'SCSS', 'WCAG 2.1', 'Code Reviews', 'Quality Assurance']
+    tags: ['Internal UI Framework', 'Responsive UI', 'SCSS', 'WCAG 2.1', 'Code Reviews', 'Quality Assurance']
   },
   'samsung-agm': {
     title: 'Samsung SDS AGM Platform',
@@ -212,7 +212,7 @@ const projectDetailsData = {
     metrics: 'Mobile-first responsiveness • High-converting booking UI • Cross-browser defect resolution',
     image: 'assets/projects/tripknock.png',
     liveUrl: 'https://www.tripknock.com',
-    tags: ['HTML5', 'SCSS', 'JavaScript ES6+', 'SEO Markup', 'Figma-to-Code', 'Responsive Web Design']
+    tags: ['HTML5', 'SCSS', 'JavaScript', 'SEO Markup', 'Figma-to-Code', 'Responsive Web Design']
   },
   'urja-for-women': {
     title: 'Urja for Women',
@@ -232,11 +232,11 @@ const projectDetailsData = {
     role: 'Frontend Developer (Freelance) — Multiple Clients',
     line1: 'Delivered frontend interfaces for leading ed-tech platform providing video lectures and exam prep for CMA/CS certifications.',
     line2: 'Implemented responsive course dashboards, interactive video player components, and streamlined checkout workflows.',
-    architecture: 'Built modular course syllabi, lecture player controls, and student test evaluation screens with modern JavaScript (ES6) and responsive CSS Grid/Flexbox layouts.',
+    architecture: 'Built modular course syllabi, lecture player controls, and student test evaluation screens with JavaScript and responsive CSS Grid/Flexbox layouts.',
     metrics: '10,000+ Students served • Adaptive video layout • Cross-browser verified checkout',
     image: 'assets/projects/toplad.png',
     liveUrl: 'https://toplad.in',
-    tags: ['JavaScript ES6', 'CSS Grid', 'Flexbox', 'Responsive UI', 'Video Player UI']
+    tags: ['JavaScript', 'CSS Grid', 'Flexbox', 'Responsive UI', 'Video Player UI']
   },
   'address-home': {
     title: 'Address Home',

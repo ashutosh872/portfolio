@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ashutosh Kumar — Senior Frontend Engineer Resume</title>
+  <title>Ashutosh_Kumar_Resume</title>
   <style>
     /* ATS-Optimized System Typography & Reset */
     *, *::before, *::after {
@@ -25,14 +25,17 @@
 
     @page {
       size: A4;
-      margin: 9mm 13mm;
+      margin: 0mm; /* Suppresses browser-generated headers (date, title) and footers (URL, page numbers) */
     }
 
     @media print {
-      body {
-        padding: 0;
-        max-width: 100%;
-        color: #000000;
+      html, body {
+        margin: 0 !important;
+        padding: 8mm 12mm 0 12mm !important;
+        max-width: 100% !important;
+        color: #000000 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
       }
       a {
         text-decoration: none;
@@ -284,18 +287,19 @@
 
   <!-- Screen Only Quick Bar -->
   <div class="screen-action-bar no-print">
-    <span><strong>ATS Master Resume</strong> — Ashutosh Kumar (Senior Frontend Engineer)</span>
+    <span><strong>Professional Resume</strong> — Ashutosh Kumar (Senior UI Developer • Frontend Engineer)</span>
     <div style="display: flex; gap: 8px;">
+      <a href="Ashutosh_Kumar_Resume.pdf" download="Ashutosh_Kumar_Resume.pdf" style="background:#2563eb; color:#fff; font-weight:600;">📥 Download Clean PDF</a>
       <a href="https://ashutosh872.github.io/portfolio/" target="_blank" rel="noopener">🌐 Live Portfolio</a>
-      <a href="/" target="_self" style="background:#475569;">📊 Job Dashboard</a>
-      <button onclick="window.print()">Print / Save PDF</button>
+      <a href="https://ashutosh872.github.io/talentflow-ai/" target="_blank" rel="noopener" style="background:#475569;">📊 Job Dashboard</a>
+      <button onclick="window.print()">🖨️ Print / Save</button>
     </div>
   </div>
 
   <!-- Header -->
   <header>
     <h1>Ashutosh Kumar</h1>
-    <div class="tagline">Senior Frontend Engineer &bull; Senior UI Developer (8+ Years Experience)</div>
+    <div class="tagline">Senior UI Developer &bull; Frontend Engineer (8+ Years Experience)</div>
     <div class="contact-bar">
       <span>📍 New Delhi (Delhi NCR) / Remote India</span>
       <span class="sep">&bull;</span>

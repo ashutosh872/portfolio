@@ -45,7 +45,7 @@ Include this link right below your name in your Resume header:
 ASHUTOSH KUMAR
 SENIOR FRONTEND ENGINEER • SENIOR UI DEVELOPER
 New Delhi, India | +91 9310681373 | kumar.ashu872@gmail.com
-Portfolio: https://kumarashu872.github.io/portfolio | LinkedIn: linkedin.com/in/kumarashu872
+Portfolio: https://ashutosh872.github.io/portfolio | LinkedIn: linkedin.com/in/kumarashu872 | GitHub: github.com/ashutosh872
 ```
 
 ---
@@ -59,15 +59,15 @@ Portfolio: https://kumarashu872.github.io/portfolio | LinkedIn: linkedin.com/in/
    git add .
    git commit -m "feat: initial senior frontend portfolio"
    ```
-2. Create a new repository on GitHub named `portfolio` (or `kumarashu872.github.io`).
+2. Create a new repository on GitHub named `portfolio` (or `ashutosh872.github.io`).
 3. Push to GitHub:
    ```bash
-   git remote add origin https://github.com/kumarashu872/portfolio.git
+   git remote add origin https://github.com/ashutosh872/portfolio.git
    git branch -M main
    git push -u origin main
    ```
 4. In GitHub Repository Settings -> **Pages** -> Select **Branch: main** -> Save.
-5. Your portfolio is instantly live at: `https://kumarashu872.github.io/portfolio`!
+5. Your portfolio is instantly live at: `https://ashutosh872.github.io/portfolio`!
 
 ### Option 2: Vercel (1-Click)
 1. Run `npx vercel` or import the GitHub repository in [vercel.com](https://vercel.com).

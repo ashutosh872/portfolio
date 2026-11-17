@@ -447,12 +447,47 @@ h1, h2, h3, h4, h5, h6, p, span, a, button, li {
   cursor: pointer;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 4.5px;
+  padding: 8px 6px;
   flex-shrink: 0;
+  transition: all var(--transition-fast);
+}
+
+.mobile-toggle-btn:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+  background: var(--bg-surface-elevated);
+}
+
+.mobile-toggle-btn span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: currentColor;
+  border-radius: var(--radius-full);
+  transition: transform var(--transition-base), opacity var(--transition-base);
+  pointer-events: none;
+}
+
+/* Morph hamburger into X when active/open */
+.mobile-toggle-btn.active span:nth-child(1) {
+  transform: translateY(6.5px) rotate(45deg);
+}
+
+.mobile-toggle-btn.active span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.mobile-toggle-btn.active span:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
 }
 
 .mobile-toggle-btn svg {
   width: 20px;
   height: 20px;
+  stroke: currentColor;
   pointer-events: none;
 }
 
@@ -2034,6 +2069,12 @@ h1, h2, h3, h4, h5, h6, p, span, a, button, li {
   background: #ffffff;
   border-color: #cbd5e1;
   color: #0f172a;
+}
+
+[data-theme="light"] .mobile-toggle-btn:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+  background: #f1f5f9;
 }
 
 [data-theme="light"] .nav-links {

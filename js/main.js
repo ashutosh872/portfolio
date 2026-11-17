@@ -53,19 +53,29 @@ function updateThemeIcon(theme) {
    Live Timezone Clock (New Delhi, India GMT+5:30)
    ========================================================================== */
 function initLiveClock() {
-  const clockElement = document.getElementById('live-clock');
-  if (!clockElement) return;
+  const clockElements = document.querySelectorAll('.live-clock, #live-clock');
+  if (clockElements.length === 0) return;
 
   function updateClock() {
-    const options = {
-      timeZone: 'Asia/Kolkata',
-      hour12: true,
-      hour: '2-digit',
-      minute: '2-digit',
-      second: '2-digit'
-    };
-    const now = new Date();
-    clockElement.textContent = now.toLocaleTimeString('en-US', options);
+    try {
+      const options = {
+        timeZone: 'Asia/Kolkata',
+        hour12: true,
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+      };
+      const now = new Date();
+      const timeStr = now.toLocaleTimeString('en-US', options);
+      clockElements.forEach(el => {
+        el.textContent = timeStr;
+      });
+    } catch (err) {
+      const now = new Date();
+      clockElements.forEach(el => {
+        el.textContent = now.toLocaleTimeString();
+      });
+    }
   }
 
   updateClock();

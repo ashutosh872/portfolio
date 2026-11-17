@@ -1,81 +1,60 @@
-# Ashutosh Kumar — Senior Frontend Engineer & UI Architect Portfolio
+# Ashutosh Kumar — Senior Frontend Engineer & Senior UI Developer Portfolio
 
-A modern, high-performance portfolio website engineered specifically for **Ashutosh Kumar (Senior Frontend / UI Engineer)**. Crafted to 2025/2026 design standards (Linear / Apple dark aesthetic, Bento Grid layout, zero external framework dependencies, 100% Lighthouse Performance, WCAG 2.1 AA accessibility).
-
----
-
-## 🌟 Key Features
-
-1. **Bento Grid Architecture**:
-   - Modern dark/light theme with ambient radial lighting and subtle mesh texture.
-   - Interactive live status pill (`🟢 Open for Senior Frontend / UI Engineer Roles`).
-   - Live time in New Delhi (IST GMT+5:30) with ticking real-time clock.
-   - High-impact metrics showcase (8+ years experience, 97/100 code rating at Samsung SDS).
-
-2. **Selected Works Showcase (All 14 Projects)**:
-   - **Name**: Clear brand/system name with domain tag.
-   - **2-Line Impact Summary**: Exactly two clean, punchy lines detailing what was built and the measurable outcome.
-   - **High-Fidelity Screenshot Mockup**: Clean SVG browser preview for each project with custom UI components, data tables, graphs, and badges.
-   - **Live Link in New Tab**: Direct links (`target="_blank" rel="noopener noreferrer"`) for all online client sites (Wondrfly, Tripknock, Urja for Women, Toplad, Address Home, Buddha Trail, Mindrops, etc.).
-   - **Enterprise Specs & Case Study Modals**: Dedicated deep-dive architectural breakdowns for confidential enterprise systems (Samsung SDS Metadata, Samsung SDS AGM, Cisco BPA, Cisco SD-WAN, and Playwright Bug Engine).
-
-3. **Interactive UI Developer Playground**:
-   - Live Design Token Inspector with interactive border-radius slider, color tokens, and real-time WCAG AAA contrast ratio calculation. Proves frontend & design system mastery immediately to hiring managers.
-
-4. **Complete Career Timeline**:
-   - Highlights 8+ years across Wondrfly, Freelance startups, Samsung SDS (with 97/100 rating badge), Experience Commerce, Mindrops, Infinity Labs (Cisco), and Codifier.
-
-5. **Technical Skills Matrix**:
-   - Grouped into Frontend Core, UI Engineering & Design Systems, Testing & Automation (Playwright), Accessibility & Performance (WCAG 2.1/2.2), and Tools & AI Workflows (Cursor AI, Claude).
-
-6. **Resume Download & Fast Conversion**:
-   - Download ATS Resume button linked directly to `assets/Ashutosh_Kumar_Resume.pdf`.
-   - 1-click "Copy Email" button with toast notification.
-   - Direct mailto, phone, and LinkedIn profile links.
+A modern, high-performance multi-page portfolio website engineered specifically for **Ashutosh Kumar (Senior Frontend Engineer & Senior UI Developer)**. Crafted to 2026 design standards (Linear / Apple dark aesthetic, Bento Grid layout, zero external framework dependencies, 100% Lighthouse Performance, WCAG 2.1 AA accessibility, and zero horizontal overflow across 320px–1280px+ screens).
 
 ---
 
-## 📄 Adding this Portfolio to Your Resume
+## 🌟 Multi-Page Architecture
 
-Include this link right below your name in your Resume header:
+1. **Home (`index.html`)**:
+   - **Hero Section**: Senior introduction, status pill (`🟢 Immediate Joiner (0 Days Notice)`), prominent GitHub profile button (`ashutosh872`), live IST clock, and metrics bento grid (8+ years experience, 14 shipped systems, 97/100 rating at Samsung SDS Global).
+   - **Top 3 Featured Works**: Handpicked highlights representing commercial scale (`Wondrfly`), enterprise portals (`Samsung SDS Metadata Platform`), and live e-commerce/travel (`The Buddha Trail`).
+   - **View All Works Banner**: Direct pathway to the full 14-project catalog.
+   - **About Me Preview**: Executive summary with career highlights and direct link to `about.html`.
+   - **Quick Contact Card**: Fast conversion with 1-click email copy, GitHub, LinkedIn, and direct phone link.
 
-### ATS-Friendly Resume Header Example:
+2. **About Me (`about.html`)**:
+   - **Engineering Philosophy**: Detailed breakdown of frontend architecture, zero layout shift (CLS), mobile-first responsiveness, and Playwright test automation.
+   - **Technical Skills Matrix**: Comprehensive skills bento grid (Frontend Core, UI Engineering & Frameworks, Testing & Performance, Tooling & Design).
+   - **Full Career Timeline (8+ Years)**: 7 positions spanning 2016 to 2026 (Wondrfly Inc., Freelance Startups, Samsung SDS Global, Experience Commerce, Mindrops, Infinity Labs / Cisco Client, Codifier Technologies).
+   - **Education & Honors**: MCA (GGSIPU New Delhi), BCA (Sikkim Manipal University), and 97/100 Performance Appraisal & Formal Management Appreciation at Samsung SDS Global.
+
+3. **Selected Works (`works.html`)**:
+   - **Complete 14 Projects Catalog**: All enterprise and commercial projects documented in resume.
+   - **Interactive Toolbar**: Filter tabs (All Works [14], Enterprise Platforms [4], Commercial & Client [10]) plus live search box.
+   - **Real Production Screens & Sanitized NDA Wireframes**: High-res screenshots for live client sites and clean architectural wireframes for internal enterprise portals.
+   - **Case Study Modal**: Deep-dive implementation details, measurable metrics, skills tags, and 1-click shareable project links (`#project-id`).
+
+4. **Contact & Availability (`contact.html`)**:
+   - **Contact Bento Grid (6 Channels)**:
+     - Direct Email (`kumar.ashu872@gmail.com`) with 1-click clipboard copy.
+     - GitHub Profile (`https://github.com/ashutosh872`) highlighted prominently for code review.
+     - LinkedIn Profile (`https://linkedin.com/in/kumarashu872`).
+     - Direct Phone (`+91 9310681373`).
+     - ATS Resume Download (`assets/Ashutosh_Kumar_Resume.pdf` and link to `assets/Ashutosh_Kumar_ATS_Resume.html`).
+     - Location & Real-Time IST Clock (`New Delhi / Remote India`, `Asia/Kolkata` live clock with Immediate Joiner status).
+   - **Recruiter Quick Notes**: Immediate 0 days notice, role preferences, work authorization, and tech stack match.
+
+---
+
+## 📄 ATS-Friendly Resume Header
 
 ```text
 ASHUTOSH KUMAR
 SENIOR FRONTEND ENGINEER • SENIOR UI DEVELOPER
 New Delhi, India | +91 9310681373 | kumar.ashu872@gmail.com
-Portfolio: https://ashutosh872.github.io/portfolio | LinkedIn: linkedin.com/in/kumarashu872 | GitHub: github.com/ashutosh872
+Portfolio: https://ashutosh872.github.io/portfolio | GitHub: https://github.com/ashutosh872 | LinkedIn: https://linkedin.com/in/kumarashu872
 ```
 
 ---
 
-## 🚀 How to Deploy (Free in 2 Minutes)
+## 🚀 Live Deployment (GitHub Pages)
 
-### Option 1: GitHub Pages (Recommended)
-1. Initialize git in this directory and commit:
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: initial senior frontend portfolio"
-   ```
-2. Create a new repository on GitHub named `portfolio` (or `ashutosh872.github.io`).
-3. Push to GitHub:
-   ```bash
-   git remote add origin https://github.com/ashutosh872/portfolio.git
-   git branch -M main
-   git push -u origin main
-   ```
-4. In GitHub Repository Settings -> **Pages** -> Select **Branch: main** -> Save.
-5. Your portfolio is instantly live at: `https://ashutosh872.github.io/portfolio`!
-
-### Option 2: Vercel (1-Click)
-1. Run `npx vercel` or import the GitHub repository in [vercel.com](https://vercel.com).
-2. It deploys automatically as a static site with global CDN in 10 seconds.
-
-### Option 3: Netlify
-1. Drag and drop the `portfolio` folder directly into [app.netlify.com/drop](https://app.netlify.com/drop).
-2. Instantly receive a live URL.
+- **Live URL**: `https://ashutosh872.github.io/portfolio/`
+- **Home**: `https://ashutosh872.github.io/portfolio/index.html`
+- **About**: `https://ashutosh872.github.io/portfolio/about.html`
+- **Works**: `https://ashutosh872.github.io/portfolio/works.html`
+- **Contact**: `https://ashutosh872.github.io/portfolio/contact.html`
 
 ---
 
@@ -83,36 +62,25 @@ Portfolio: https://ashutosh872.github.io/portfolio | LinkedIn: linkedin.com/in/k
 
 ```text
 portfolio/
-├── index.html                  # Semantic, accessible HTML5 single-page application
+├── index.html                  # Home page (Intro, Top 3 Projects, About Summary, Quick Contact)
+├── about.html                  # Complete About page (Philosophy, Skills, 8+ yr Timeline, Education)
+├── works.html                  # Full Works catalog (14 Projects, Filter Tabs, Search, Case Studies)
+├── contact.html                # Dedicated Contact page (6-Channel Bento Grid & Real-Time IST Clock)
 ├── css/
-│   └── style.css               # Modern CSS3 with Custom Properties, Bento Grid, Flexbox
+│   └── style.css               # Modern CSS3 with Custom Properties, Bento Grid, Print Styles, Strict Anti-Overflow
 ├── js/
-│   └── main.js                 # Theme toggle, live clock, project filtering, modal, toast
-├── assets/
-│   ├── Ashutosh_Kumar_Resume.pdf # Downloadable resume PDF
-│   └── projects/               # High-fidelity SVG mockup screenshots for all 14 projects
-│       ├── wondrfly.svg
-│       ├── samsung-metadata.svg
-│       ├── samsung-agm.svg
-│       ├── cisco-bpa.svg
-│       ├── cisco-sdwan.svg
-│       ├── tripknock.svg
-│       ├── urja-for-women.svg
-│       ├── toplad.svg
-│       ├── address-home.svg
-│       ├── tripomate.svg
-│       ├── buddha-trail.svg
-│       ├── mindrops.svg
-│       ├── codifier.svg
-│       └── playwright-workflow.svg
-└── generate-previews.js        # Node.js SVG generator script
+│   └── main.js                 # Theme toggle, live clock, project filtering, modal, toast notifications
+└── assets/
+    ├── Ashutosh_Kumar_Resume.pdf # Printable PDF ATS resume
+    ├── Ashutosh_Kumar_ATS_Resume.html # Semantic ATS resume web version
+    └── projects/               # Real production screenshots and sanitized architectural wireframes
 ```
 
 ---
 
-## 🎨 Swapping with Real Screenshots Later
+## 💻 Tech Stack & Design Decisions
 
-If you want to replace any SVG mockups with actual PNG/JPG screenshots of your work in the future:
-1. Save your screenshot as a PNG or JPG (e.g. `assets/projects/wondrfly.png`).
-2. Update the `src` attribute in `index.html` (e.g. `<img src="assets/projects/wondrfly.png" ...>`).
-3. Update the `image` path in `js/main.js` under `projectDetailsData`.
+- **Pure Semantic HTML5 & Modern CSS3**: Zero heavy runtime frameworks (React/Vue/Webpack/Vite overhead eliminated for 100/100 Lighthouse performance).
+- **CSS Custom Properties**: Fluid dark/light theme switching with instant `localStorage` persistence across all pages.
+- **Strict Anti-Overflow Architecture**: `overflow-x: hidden`, flexible flexbox wrap, and responsive typography ensuring zero word-clipping and zero horizontal scroll from 320px mobile to 4K displays.
+- **Executive Print View**: Clean `@media print` styling allowing recruiters to print or save a candidate summary directly via `Ctrl+P`.

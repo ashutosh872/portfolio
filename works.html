@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore all 14 production websites and enterprise platforms built by Ashutosh Kumar, Senior Frontend Engineer & Senior UI Developer.">
+  <meta name="keywords" content="Ashutosh Kumar, Senior Frontend Engineer, Senior UI Developer, HTML5, SCSS, JavaScript, Angular Material UI, Playwright, WCAG, Responsive Web Design, Web Publisher">
+  <meta name="author" content="Ashutosh Kumar">
+  <title>Selected Works & Enterprise Systems | Ashutosh Kumar</title>
+
+  <!-- OpenGraph Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Selected Works & Enterprise Systems | Ashutosh Kumar">
+  <meta property="og:description" content="Explore all 14 production websites and enterprise platforms built by Ashutosh Kumar, Senior Frontend Engineer & Senior UI Developer.">
+  <meta property="og:image" content="assets/projects/wondrfly.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Background Lighting -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="ambient-circle-1"></div>
+    <div class="ambient-circle-2"></div>
+  </div>
+  <div class="bg-mesh-pattern" aria-hidden="true"></div>
+
+  <!-- Site Header & Sticky Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="nav-wrapper" aria-label="Main Navigation">
+        <!-- Brand Link -->
+        <a href="index.html" class="brand-link" aria-label="Ashutosh Kumar Home">
+          <div class="monogram-badge">AK</div>
+          <div class="brand-text">
+            <span class="brand-name">Ashutosh Kumar</span>
+            <span class="brand-role">Senior Frontend Engineer</span>
+          </div>
+        </a>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="works.html" class="nav-link active">Works</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="assets/Ashutosh_Kumar_Resume.pdf" class="nav-link" download="Ashutosh_Kumar_Resume.pdf" style="color: var(--accent-primary);">📄 Download Resume</a></li>
+        </ul>
+
+        <!-- Nav Action Buttons -->
+        <div class="nav-actions">
+          <a href="https://github.com/ashutosh872" target="_blank" rel="noopener noreferrer" class="nav-github-btn" aria-label="GitHub Profile (ashutosh872)" title="GitHub: ashutosh872">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+
+          <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Theme (Dark/Light)">
+            <svg id="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg id="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <button class="mobile-toggle-btn" id="mobile-toggle-btn" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main-content">
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="section-tag">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+          <span>Selected Projects</span>
+        </div>
+        <h1 class="page-hero-title">Selected Works &amp; Enterprise Systems</h1>
+        <p class="page-hero-desc">
+          Production web applications, high-concurrency portals, and enterprise platforms directly documented in my resume. Filter by enterprise systems or commercial websites, or search by technology stack.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section with Toolbar & All 14 Cards -->
+    <section class="projects-section" id="projects" style="padding-top: 0;">
+      <div class="container">
+        
+        <!-- Toolbar -->
+        <div class="projects-toolbar">
+          <div class="filter-tabs" role="tablist">
+            <button class="tab-btn active" data-filter="all" role="tab" aria-selected="true">
+              <span>All Works</span>
+              <span class="tab-badge" id="visible-projects-count">14</span>
+            </button>
+            <button class="tab-btn" data-filter="enterprise" role="tab" aria-selected="false">
+              <span>Enterprise Platforms</span>
+              <span class="tab-badge">4</span>
+            </button>
+            <button class="tab-btn" data-filter="commercial" role="tab" aria-selected="false">
+              <span>Commercial &amp; Client</span>
+              <span class="tab-badge">10</span>
+            </button>
+          </div>
+
+          <div class="search-box-wrapper">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="project-search-input" class="search-input" placeholder="Search by name, tech (SCSS, Playwright)..." aria-label="Search projects">
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- 1. WONDRFLY (Real Website Screen) -->
+          <article class="project-card" data-category="commercial">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/wondrfly.png" alt="Wondrfly Live Website Screen" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-online">🟢 Online</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Wondrfly</h3>
+                <span class="project-domain-tag">wondrfly.com</span>
+              </div>
+              <div class="project-two-lines">
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Build and maintain responsive, pixel-perfect website interfaces from Figma designs using HTML5, SCSS, JavaScript, and Angular Material UI.
+                </span>
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Translate design specifications into production-ready UI across complex layouts and contribute to Playwright-based browser automation.
+                </span>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">SCSS</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Angular Material UI</span>
+                <span class="tech-badge">Playwright</span>
+              </div>
+              <div class="card-action-footer">
+                <a href="https://www.wondrfly.com" target="_blank" rel="noopener noreferrer" class="btn-live-link">
+                  <span>Live Site</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+                <button class="btn-view-details" data-project-trigger="wondrfly">Specs &amp; Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. SAMSUNG SDS METADATA PLATFORM -->
+          <article class="project-card" data-category="enterprise">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/samsung-metadata.svg" alt="Samsung SDS Metadata Platform Interface" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-enterprise">🔒 Enterprise Platform</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Samsung SDS Metadata Platform</h3>
+                <span class="project-domain-tag">Samsung SDS HQ</span>
+              </div>
+              <div class="project-two-lines">
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Delivered and maintained enterprise web interfaces for Samsung HQ platforms utilizing internal UI frameworks and design systems.
+                </span>
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Maintained responsive behavior, content accuracy, and web accessibility standards, earning a 97/100 performance rating.
+                </span>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">Internal UI Framework</span>
+                <span class="tech-badge">Design Systems</span>
+                <span class="tech-badge">SCSS</span>
+                <span class="tech-badge">WCAG 2.1</span>
+              </div>
+              <div class="card-action-footer">
+                <button class="btn-enterprise-specs" data-project-trigger="samsung-metadata">
+                  <span>Enterprise Specs 🔒</span>
+                </button>
+                <button class="btn-view-details" data-project-trigger="samsung-metadata">Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. SAMSUNG SDS AGM PLATFORM -->
+          <article class="project-card" data-category="enterprise">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/samsung-agm.svg" alt="Samsung SDS AGM Platform Interface" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-enterprise">🔒 Enterprise Platform</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Samsung SDS AGM Platform</h3>
+                <span class="project-domain-tag">Samsung SDS HQ</span>
+              </div>
+              <div class="project-two-lines">
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Delivered Annual General Meeting (AGM) hybrid platform facilitating high-concurrency electronic voting and shareholder proceedings.
+                </span>
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Constructed responsive, fault-tolerant layouts and validated cross-browser behavior across mission-critical devices.
+                </span>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">Internal UI Framework</span>
+                <span class="tech-badge">Angular Components</span>
+                <span class="tech-badge">Responsive CSS</span>
+                <span class="tech-badge">Cross-Browser QA</span>
+              </div>
+              <div class="card-action-footer">
+                <button class="btn-enterprise-specs" data-project-trigger="samsung-agm">
+                  <span>Enterprise Specs 🔒</span>
+                </button>
+                <button class="btn-view-details" data-project-trigger="samsung-agm">Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. CISCO BPA PORTAL -->
+          <article class="project-card" data-category="enterprise">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/cisco-bpa.svg" alt="Cisco BPA Portal Interface" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-enterprise">🔒 Enterprise Platform</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Cisco BPA Portal</h3>
+                <span class="project-domain-tag">Cisco Client</span>
+              </div>
+              <div class="project-two-lines">
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Engineered front-end interfaces for the Cisco Business Process Automation (BPA) Portal for telecom network orchestration.
+                </span>
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Constructed wireframes, functional prototypes, and production UI components utilizing HTML, CSS, Bootstrap, and Angular Material UI.
+                </span>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">Bootstrap</span>
+                <span class="tech-badge">Angular Material UI</span>
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">Wireframing</span>
+              </div>
+              <div class="card-action-footer">
+                <button class="btn-enterprise-specs" data-project-trigger="cisco-bpa">
+                  <span>Enterprise Specs 🔒</span>
+                </button>
+                <button class="btn-view-details" data-project-trigger="cisco-bpa">Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. CISCO SD-WAN MANAGEMENT INTERFACE -->
+          <article class="project-card" data-category="enterprise">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/cisco-sdwan.svg" alt="Cisco SD-WAN Interface" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-enterprise">🔒 Enterprise Platform</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Cisco SD-WAN Interface System</h3>
+                <span class="project-domain-tag">Cisco Client</span>
+              </div>
+              <div class="project-two-lines">
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Contributed to Cisco SD-WAN UI screens, monitoring software-defined wide area network topologies in real-time.
+                </span>
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Collaborated with enterprise cross-functional teams to deploy interface enhancements and uphold consistent design guidelines.
+                </span>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">Angular Material UI</span>
+                <span class="tech-badge">Modular CSS</span>
+                <span class="tech-badge">Network UI</span>
+                <span class="tech-badge">Responsive Design</span>
+              </div>
+              <div class="card-action-footer">
+                <button class="btn-enterprise-specs" data-project-trigger="cisco-sdwan">
+                  <span>Enterprise Specs 🔒</span>
+                </button>
+                <button class="btn-view-details" data-project-trigger="cisco-sdwan">Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. TRIPKNOCK (Real Website Screen) -->
+          <article class="project-card" data-category="commercial">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/tripknock.png" alt="Tripknock Live Website Screen" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-online">🟢 Online</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Tripknock</h3>
+                <span class="project-domain-tag">tripknock.com</span>
+              </div>
+              <div class="project-two-lines">
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Delivered high-quality frontend solutions for travel discovery and experiential holiday booking.
+                </span>
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Converted Figma and PSD design assets into clean, responsive, and production-ready web interfaces with standards-compliant markup.
+                </span>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">SCSS</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">SEO Markup</span>
+                <span class="tech-badge">Figma-to-Code</span>
+              </div>
+              <div class="card-action-footer">
+                <a href="https://www.tripknock.com" target="_blank" rel="noopener noreferrer" class="btn-live-link">
+                  <span>Live Site</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+                <button class="btn-view-details" data-project-trigger="tripknock">Specs &amp; Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. URJA FOR WOMEN (Real Website Screen) -->
+          <article class="project-card" data-category="commercial">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/urja-for-women.png" alt="Urja for Women Live Website Screen" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-online">🟢 Online</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Urja for Women</h3>
+                <span class="project-domain-tag">urjaforwomen.org</span>
+              </div>
+              <div class="project-two-lines">
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Delivered accessible frontend solutions for NGO empowering women through healthcare, shelter, and community training.
+                </span>
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Built and customized WordPress website with semantic markup, accessible donation flows, and SEO-friendly implementation.
+                </span>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">Semantic HTML5</span>
+                <span class="tech-badge">SCSS</span>
+                <span class="tech-badge">WordPress</span>
+                <span class="tech-badge">WCAG 2.1 AA</span>
+              </div>
+              <div class="card-action-footer">
+                <a href="https://urjaforwomen.org" target="_blank" rel="noopener noreferrer" class="btn-live-link">
+                  <span>Live Site</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+                <button class="btn-view-details" data-project-trigger="urja-for-women">Specs &amp; Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. TOPLAD (Real Website Screen) -->
+          <article class="project-card" data-category="commercial">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/toplad.png" alt="Toplad Live Website Screen" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-online">🟢 Online</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Toplad</h3>
+                <span class="project-domain-tag">toplad.in</span>
+              </div>
+              <div class="project-two-lines">
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Delivered frontend interfaces for leading ed-tech platform delivering online prep and video lectures for CMA/CS certifications.
+                </span>
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Implemented responsive lecture dashboards, course catalog filters, and streamlined student checkout flows.
+                </span>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">JavaScript ES6</span>
+                <span class="tech-badge">CSS Grid</span>
+                <span class="tech-badge">Flexbox</span>
+                <span class="tech-badge">Video UI</span>
+              </div>
+              <div class="card-action-footer">
+                <a href="https://toplad.in" target="_blank" rel="noopener noreferrer" class="btn-live-link">
+                  <span>Live Site</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+                <button class="btn-view-details" data-project-trigger="toplad">Specs &amp; Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. ADDRESS HOME (Real Website Screen) -->
+          <article class="project-card" data-category="commercial">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/address-home.png" alt="Address Home Live Website Screen" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-online">🟢 Online</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Address Home</h3>
+                <span class="project-domain-tag">addresshome.com</span>
+              </div>
+              <div class="project-two-lines">
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Engineered frontend interfaces for high-end luxury home decor and lifestyle e-commerce brand.
+                </span>
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Converted visual design mockups into pixel-perfect web pages with responsive product grids and fluid micro-interactions.
+                </span>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Core Web Vitals</span>
+                <span class="tech-badge">Pixel-Perfect UI</span>
+              </div>
+              <div class="card-action-footer">
+                <a href="https://www.addresshome.com" target="_blank" rel="noopener noreferrer" class="btn-live-link">
+                  <span>Live Site</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+                <button class="btn-view-details" data-project-trigger="address-home">Specs &amp; Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 10. BUDDHA TRAIL (Real Website Screen) -->
+          <article class="project-card" data-category="commercial">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/buddha-trail.png" alt="The Buddha Trail Live Website Screen" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-online">🟢 Online</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Buddha Trail</h3>
+                <span class="project-domain-tag">buddhatrail.com</span>
+              </div>
+              <div class="project-two-lines">
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Constructed responsive web platform for high-altitude Singalila mountain trail ultra-marathon.
+                </span>
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Created visual storytelling pages, route elevation profiles, and registration interfaces with standards-compliant markup.
+                </span>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">Modern CSS</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Responsive Layouts</span>
+                <span class="tech-badge">SEO-Friendly</span>
+              </div>
+              <div class="card-action-footer">
+                <a href="https://www.buddhatrail.com/" target="_blank" rel="noopener noreferrer" class="btn-live-link">
+                  <span>Live Site</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+                <button class="btn-view-details" data-project-trigger="buddha-trail">Specs &amp; Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 11. MINDROPS (Real Website Screen) -->
+          <article class="project-card" data-category="commercial">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/mindrops.png" alt="Mindrops Live Website Screen" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-online">🟢 Online</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Mindrops</h3>
+                <span class="project-domain-tag">mindrops.com</span>
+              </div>
+              <div class="project-two-lines">
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Designed and developed clean, responsive page layouts strictly aligned with functional and business requirements.
+                </span>
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Converted visual design assets into accessible HTML/CSS and engineered modular, reusable UI components.
+                </span>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">Reusable Components</span>
+                <span class="tech-badge">HTML Emails</span>
+              </div>
+              <div class="card-action-footer">
+                <a href="https://mindrops.com" target="_blank" rel="noopener noreferrer" class="btn-live-link">
+                  <span>Live Site</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+                <button class="btn-view-details" data-project-trigger="mindrops">Specs &amp; Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 12. TRIPOMATE -->
+          <article class="project-card" data-category="commercial">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/tripomate.svg" alt="Tripomate Travel Platform Preview" class="card-media-img" loading="lazy">
+              <span class="card-media-badge" style="background-color: rgba(148, 163, 184, 0.9); color: #0f172a;">Archived Platform</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Tripomate</h3>
+                <span class="project-domain-tag">tripomate.com</span>
+              </div>
+              <div class="project-two-lines">
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Delivered travel portal interface featuring dynamic flight and hotel search and reservation workflows.
+                </span>
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Built interactive search filters, date-picker widgets, and cross-browser verified reservation screens.
+                </span>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">Bootstrap</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Responsive Design</span>
+              </div>
+              <div class="card-action-footer">
+                <button class="btn-enterprise-specs" style="background-color: var(--bg-surface-elevated); color: var(--text-primary); border: 1px solid var(--border-medium);" data-project-trigger="tripomate">
+                  <span>Platform Specs</span>
+                </button>
+                <button class="btn-view-details" data-project-trigger="tripomate">Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 13. CODIFIER TECHNOLOGIES (Real Website Screen) -->
+          <article class="project-card" data-category="commercial">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/codifier.png" alt="Codifier Technologies Live Website Screen" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-online">🟢 Online</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Codifier Technologies</h3>
+                <span class="project-domain-tag">codifier.co</span>
+              </div>
+              <div class="project-two-lines">
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Developed responsive WordPress websites and implemented pixel-perfect web pages from Photoshop (PSD) design mockups.
+                </span>
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Constructed cross-client verified HTML email templates and supported concurrent client projects under strict release deadlines.
+                </span>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">PSD-to-HTML</span>
+                <span class="tech-badge">WordPress</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">HTML Email Templating</span>
+              </div>
+              <div class="card-action-footer">
+                <a href="https://codifier.co/" target="_blank" rel="noopener noreferrer" class="btn-live-link">
+                  <span>Live Site</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+                <button class="btn-view-details" data-project-trigger="codifier">Specs &amp; Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 14. MSP ASIA (Real Website Screen) -->
+          <article class="project-card" data-category="commercial">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/msp-asia.png" alt="MSP Asia Live Website Screen" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-online">🟢 Online</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">MSP Asia</h3>
+                <span class="project-domain-tag">msp.asia</span>
+              </div>
+              <div class="project-two-lines">
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Corporate web presence and enterprise platform for PT Mahkota Surya Perkasa across Southeast Asia.
+                </span>
+                <span class="desc-line">
+                  <span class="desc-bullet">•</span>Delivered responsive, standards-compliant web interfaces with cross-browser defect resolution and multi-device support.
+                </span>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Responsive Design</span>
+                <span class="tech-badge">Cross-Browser QA</span>
+              </div>
+              <div class="card-action-footer">
+                <a href="https://www.msp.asia/" target="_blank" rel="noopener noreferrer" class="btn-live-link">
+                  <span>Live Site</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+                <button class="btn-view-details" data-project-trigger="msp-asia">Specs &amp; Details</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <span class="footer-copy">&copy; 2026 Ashutosh Kumar &bull; Senior Frontend Engineer &bull; Senior UI Developer</span>
+          <span class="footer-compliance">Crafted with semantic HTML5, SCSS/CSS3 Custom Properties &amp; ES6+ &bull; Zero dependencies &bull; Fully responsive</span>
+        </div>
+
+        <div class="footer-social-links">
+          <a href="https://github.com/ashutosh872" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="GitHub Profile (ashutosh872)" title="GitHub: ashutosh872">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/kumarashu872" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="mailto:kumar.ashu872@gmail.com" class="social-icon-link" aria-label="Email Ashutosh" title="Email: kumar.ashu872@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+          <a href="assets/Ashutosh_Kumar_Resume.pdf" download="Ashutosh_Kumar_Resume.pdf" class="social-icon-link" aria-label="Download ATS Resume PDF" title="Download Resume PDF">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Details Modal -->
+  <div class="modal-overlay" id="case-study-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Project Details Modal">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-media-wrap">
+        <img id="modal-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Project Screen Preview">
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-title-row">
+          <div>
+            <h3 class="modal-title" id="modal-title">Project Title</h3>
+            <span style="font-size: 0.82rem; color: var(--text-muted);" id="modal-role">Role Description</span>
+          </div>
+          <span class="modal-meta-tag" id="modal-domain">domain.com</span>
+        </div>
+
+        <div class="modal-two-lines-highlight">
+          <div style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);" id="modal-line1">Line 1 description</div>
+          <div style="font-size: 0.85rem; color: var(--text-secondary);" id="modal-line2">Line 2 description</div>
+        </div>
+
+        <div>
+          <h4 class="modal-section-title">Implementation Details (From Resume)</h4>
+          <p class="modal-details-text" id="modal-architecture"></p>
+        </div>
+
+        <div>
+          <h4 class="modal-section-title">Measurable Results</h4>
+          <p class="modal-details-text" id="modal-metrics" style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--accent-primary);"></p>
+        </div>
+
+        <div>
+          <h4 class="modal-section-title">Skills &amp; Technologies Applied</h4>
+          <div class="card-tech-stack" id="modal-tags"></div>
+        </div>
+
+        <div class="modal-footer-actions">
+          <button id="modal-share-btn" class="btn btn-outline" type="button" aria-label="Copy direct link to this project">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+            </svg>
+            <span>Copy Direct Link</span>
+          </button>
+          <a id="modal-action-btn" href="#" class="btn btn-primary" style="display: none;">
+            <span>Visit Live Site</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -135,7 +135,7 @@ const projectDetailsData = {
   'wondrfly': {
     title: 'Wondrfly',
     domain: 'wondrfly.com',
-    role: 'Frontend Developer (Contract) — Wondrfly',
+    role: 'Frontend Developer (Full-Time Contract) — Wondrfly Inc. (Concluded Oct 2026)',
     line1: 'Built and maintained responsive, pixel-perfect website interfaces from Figma designs using HTML5, SCSS, JavaScript, and Angular Material UI.',
     line2: 'Translated design specifications into production-ready UI across complex layouts and contributed to Playwright-based test automation.',
     architecture: 'Developed and maintained reusable UI patterns and scalable styling architecture to support long-term codebase maintainability. Integrated targeted Playwright browser automation to validate UI behavior, catch regressions, and ensure WCAG accessibility compliance across responsive breakpoints.',
@@ -147,7 +147,7 @@ const projectDetailsData = {
   'samsung-metadata': {
     title: 'Samsung SDS Metadata Platform',
     domain: 'Samsung SDS HQ Platforms',
-    role: 'Assistant Manager - Web Publisher — Samsung SDS',
+    role: 'Assistant Manager - Web Publisher (Permanent Corporate) — Samsung SDS Global',
     line1: 'Delivered and maintained enterprise web interfaces for Samsung HQ platforms utilizing internal UI frameworks and design systems.',
     line2: 'Maintained responsive behavior, content accuracy, and web accessibility standards while collaborating closely with global stakeholders.',
     architecture: 'Engineered high-density data tables, metadata asset catalogs, and governance workflows strictly aligned with Samsung enterprise frontend standards. Received a 97/100 performance rating for outstanding code quality and UI precision.',
@@ -159,7 +159,7 @@ const projectDetailsData = {
   'samsung-agm': {
     title: 'Samsung SDS AGM Platform',
     domain: 'Samsung SDS HQ Platforms',
-    role: 'Assistant Manager - Web Publisher — Samsung SDS',
+    role: 'Assistant Manager - Web Publisher (Permanent Corporate) — Samsung SDS Global',
     line1: 'Delivered Annual General Meeting (AGM) hybrid platform facilitating high-concurrency electronic voting and shareholder proceedings.',
     line2: 'Constructed responsive, fault-tolerant layouts and validated cross-browser behavior across mission-critical devices.',
     architecture: 'Structured electronic voting interfaces, live quorum tallies, and agenda items. Optimized DOM rendering to maintain fluid responsiveness during real-time voting bursts from shareholders worldwide.',

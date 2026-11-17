@@ -287,6 +287,30 @@ const projectDetailsData = {
     image: 'assets/projects/codifier.png',
     liveUrl: 'https://codifier.co/',
     tags: ['PSD-to-HTML', 'WordPress', 'HTML Email Templating', 'CSS3', 'Cross-Browser Compatibility']
+  },
+  'msp-asia': {
+    title: 'MSP Asia',
+    domain: 'msp.asia',
+    role: 'Frontend Developer (Freelance) — Multiple Clients',
+    line1: 'Corporate web presence and enterprise platform for PT Mahkota Surya Perkasa across Southeast Asia.',
+    line2: 'Delivered responsive, standards-compliant web interfaces with cross-browser defect resolution and multi-device support.',
+    architecture: 'Engineered responsive layout breakpoints, corporate service showcase modules, and optimized static asset delivery for seamless international browsing.',
+    metrics: 'Multi-device verified • Standards-compliant markup • Cross-browser QA',
+    image: 'assets/projects/msp-asia.png',
+    liveUrl: 'https://www.msp.asia/',
+    tags: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Web Design', 'Cross-Browser QA']
+  },
+  'ezr': {
+    title: 'EZR',
+    domain: 'ezr.in',
+    role: 'Frontend Developer (Freelance) — Multiple Clients',
+    line1: 'Delivered frontend web solutions and interactive digital interfaces for commercial client engagements.',
+    line2: 'Converted visual design mockups into pixel-perfect, responsive web pages with clean semantic markup.',
+    architecture: 'Built component-driven page sections with responsive fluid typography, CSS Grid/Flexbox layouts, and optimized cross-browser performance.',
+    metrics: 'Pixel-perfect UI translation • Fluid responsiveness • Standards-compliant implementation',
+    image: 'assets/projects/ezr.png',
+    liveUrl: 'https://ezr.in',
+    tags: ['HTML5/CSS3', 'JavaScript', 'Pixel-Perfect UI', 'Responsive Web Design', 'SEO']
   }
 };
 

@@ -305,64 +305,112 @@ const projectDetailsData = {
 function initCaseStudyModal() {
   const modalOverlay = document.getElementById('case-study-modal');
   const modalCloseBtn = document.getElementById('modal-close-btn');
+  const modalShareBtn = document.getElementById('modal-share-btn');
   if (!modalOverlay || !modalCloseBtn) return;
 
-  function closeModal() {
-    modalOverlay.classList.remove('active');
-    document.body.style.overflow = '';
+  let currentProjectId = null;
+
+  function openModal(projectId, updateHash = true) {
+    const data = projectDetailsData[projectId];
+    if (!data) return;
+
+    currentProjectId = projectId;
+
+    const modalImg = document.getElementById('modal-img');
+    modalImg.src = data.image;
+    modalImg.alt = data.title;
+    document.getElementById('modal-title').textContent = data.title;
+    document.getElementById('modal-domain').textContent = data.domain;
+    document.getElementById('modal-role').textContent = data.role;
+    document.getElementById('modal-line1').textContent = data.line1;
+    document.getElementById('modal-line2').textContent = data.line2;
+    document.getElementById('modal-architecture').textContent = data.architecture;
+    document.getElementById('modal-metrics').textContent = data.metrics;
+
+    const tagsContainer = document.getElementById('modal-tags');
+    tagsContainer.innerHTML = '';
+    data.tags.forEach(t => {
+      const span = document.createElement('span');
+      span.className = 'tech-badge';
+      span.textContent = t;
+      tagsContainer.appendChild(span);
+    });
+
+    const modalActionBtn = document.getElementById('modal-action-btn');
+    if (data.liveUrl) {
+      modalActionBtn.href = data.liveUrl;
+      modalActionBtn.target = '_blank';
+      modalActionBtn.rel = 'noopener noreferrer';
+      modalActionBtn.innerHTML = `<span>Visit Live Site</span> <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>`;
+      modalActionBtn.style.display = 'inline-flex';
+    } else {
+      modalActionBtn.style.display = 'none';
+    }
+
+    modalOverlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+
+    if (updateHash) {
+      history.replaceState(null, '', `#project-${projectId}`);
+    }
   }
 
-  modalCloseBtn.addEventListener('click', closeModal);
+  function closeModal(clearHash = true) {
+    modalOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+    currentProjectId = null;
+    if (clearHash && (window.location.hash.startsWith('#project-') || (window.location.hash && projectDetailsData[window.location.hash.replace(/^#/, '')]))) {
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+  }
+
+  modalCloseBtn.addEventListener('click', () => closeModal(true));
   modalOverlay.addEventListener('click', (e) => {
-    if (e.target === modalOverlay) closeModal();
+    if (e.target === modalOverlay) closeModal(true);
   });
 
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
-      closeModal();
+      closeModal(true);
     }
   });
+
+  if (modalShareBtn) {
+    modalShareBtn.addEventListener('click', () => {
+      if (!currentProjectId) return;
+      const shareUrl = `${window.location.origin}${window.location.pathname}#project-${currentProjectId}`;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(shareUrl).then(() => {
+          showToast(`Direct link copied: #${currentProjectId}`);
+        }).catch(() => {
+          showToast(shareUrl);
+        });
+      } else {
+        showToast(shareUrl);
+      }
+    });
+  }
 
   document.querySelectorAll('[data-project-trigger]').forEach(btn => {
     btn.addEventListener('click', () => {
       const projectId = btn.getAttribute('data-project-trigger');
-      const data = projectDetailsData[projectId];
-      if (!data) return;
-
-      document.getElementById('modal-img').src = data.image;
-      document.getElementById('modal-img').alt = data.title;
-      document.getElementById('modal-title').textContent = data.title;
-      document.getElementById('modal-domain').textContent = data.domain;
-      document.getElementById('modal-role').textContent = data.role;
-      document.getElementById('modal-line1').textContent = data.line1;
-      document.getElementById('modal-line2').textContent = data.line2;
-      document.getElementById('modal-architecture').textContent = data.architecture;
-      document.getElementById('modal-metrics').textContent = data.metrics;
-
-      const tagsContainer = document.getElementById('modal-tags');
-      tagsContainer.innerHTML = '';
-      data.tags.forEach(t => {
-        const span = document.createElement('span');
-        span.className = 'tech-badge';
-        span.textContent = t;
-        tagsContainer.appendChild(span);
-      });
-
-      const modalActionBtn = document.getElementById('modal-action-btn');
-      if (data.liveUrl) {
-        modalActionBtn.href = data.liveUrl;
-        modalActionBtn.target = '_blank';
-        modalActionBtn.rel = 'noopener noreferrer';
-        modalActionBtn.innerHTML = `<span>Visit Live Site</span> <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>`;
-        modalActionBtn.style.display = 'inline-flex';
-      } else {
-        modalActionBtn.style.display = 'none';
-      }
-
-      modalOverlay.classList.add('active');
-      document.body.style.overflow = 'hidden';
+      openModal(projectId, true);
     });
   });
+
+  // Check URL hash on initial load or popstate/hashchange
+  function handleHashRoute() {
+    const hash = window.location.hash;
+    if (hash) {
+      const match = hash.match(/^#(?:project-)?([a-z0-9\-]+)$/);
+      if (match && projectDetailsData[match[1]]) {
+        openModal(match[1], false);
+      }
+    }
+  }
+
+  handleHashRoute();
+  window.addEventListener('hashchange', handleHashRoute);
 }
 
 /* ==========================================================================

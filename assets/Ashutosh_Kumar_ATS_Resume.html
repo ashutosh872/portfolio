@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashutosh Kumar — Senior Frontend Engineer Resume</title>
+  <style>
+    /* ATS-Optimized System Typography & Reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Calibri', 'Arial', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif;
+      font-size: 10pt;
+      line-height: 1.42;
+      color: #1f2937;
+      background-color: #ffffff;
+      padding: 24px 32px;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    @page {
+      size: A4;
+      margin: 12mm 16mm;
+    }
+
+    @media print {
+      body {
+        padding: 0;
+        max-width: 100%;
+        color: #000000;
+      }
+      a {
+        text-decoration: none;
+        color: #000000;
+      }
+      .no-print {
+        display: none !important;
+      }
+      h2 {
+        page-break-after: avoid;
+        break-after: avoid;
+      }
+      .experience-item {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+      .award-badge {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+      table {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+    }
+
+    /* Header & Contact Information */
+    header {
+      border-bottom: 2px solid #2563eb;
+      padding-bottom: 10px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: 22pt;
+      font-weight: 700;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+      margin-bottom: 3px;
+      text-transform: uppercase;
+    }
+
+    .tagline {
+      font-size: 11pt;
+      font-weight: 600;
+      color: #2563eb;
+      margin-bottom: 6px;
+    }
+
+    .contact-bar {
+      font-size: 9pt;
+      color: #4b5563;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 14px;
+      align-items: center;
+    }
+
+    .contact-bar a {
+      color: #1d4ed8;
+      text-decoration: none;
+    }
+
+    .contact-bar a:hover {
+      text-decoration: underline;
+    }
+
+    .sep {
+      color: #cbd5e1;
+    }
+
+    /* Section Headings (ATS Standard: Clear uppercase with solid underline) */
+    section {
+      margin-bottom: 13px;
+    }
+
+    h2 {
+      font-size: 11.5pt;
+      font-weight: 700;
+      color: #0f172a;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 1.5px solid #cbd5e1;
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+    }
+
+    /* Professional Summary */
+    .summary-text {
+      font-size: 9.5pt;
+      color: #334155;
+      text-align: justify;
+      line-height: 1.45;
+    }
+
+    /* Skills Grid / Categorized Table for ATS */
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 9.2pt;
+      margin-top: 2px;
+    }
+
+    .skills-table td {
+      padding: 3px 0;
+      vertical-align: top;
+    }
+
+    .skills-category {
+      font-weight: 700;
+      color: #1e293b;
+      width: 26%;
+      white-space: nowrap;
+    }
+
+    .skills-list {
+      color: #334155;
+      width: 74%;
+    }
+
+    /* Experience Items */
+    .experience-item {
+      margin-bottom: 11px;
+    }
+
+    .role-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1px;
+    }
+
+    .role-title {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .role-company {
+      font-size: 10pt;
+      font-weight: 600;
+      color: #2563eb;
+    }
+
+    .role-dates {
+      font-size: 9pt;
+      font-weight: 600;
+      color: #64748b;
+      white-space: nowrap;
+    }
+
+    .role-location {
+      font-size: 8.5pt;
+      color: #64748b;
+      margin-bottom: 4px;
+    }
+
+    /* Bullets */
+    ul.bullets {
+      list-style-type: disc;
+      margin-left: 17px;
+      margin-top: 3px;
+    }
+
+    ul.bullets li {
+      font-size: 9.2pt;
+      color: #334155;
+      margin-bottom: 3.5px;
+      line-height: 1.4;
+    }
+
+    ul.bullets li strong {
+      color: #0f172a;
+    }
+
+    ul.bullets li a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    ul.bullets li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Honors & Education Box */
+    .award-badge {
+      background-color: #eff6ff;
+      border-left: 3px solid #2563eb;
+      padding: 6px 10px;
+      margin: 4px 0 8px 0;
+      font-size: 9pt;
+      color: #1e3a8a;
+    }
+
+    .edu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+      font-size: 9.2pt;
+    }
+
+    .edu-degree {
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .edu-inst {
+      color: #475569;
+    }
+
+    .edu-year {
+      font-weight: 600;
+      color: #64748b;
+      white-space: nowrap;
+    }
+
+    /* Screen Action Bar */
+    .screen-action-bar {
+      background-color: #0f172a;
+      color: #f8fafc;
+      padding: 10px 16px;
+      border-radius: 6px;
+      margin-bottom: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 9pt;
+    }
+
+    .screen-action-bar a, .screen-action-bar button {
+      background: #2563eb;
+      color: #ffffff;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 8.5pt;
+    }
+
+    .screen-action-bar a:hover, .screen-action-bar button:hover {
+      background: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Screen Only Quick Bar -->
+  <div class="screen-action-bar no-print">
+    <span><strong>ATS Master Resume</strong> — Ashutosh Kumar (Senior Frontend Engineer)</span>
+    <div style="display: flex; gap: 8px;">
+      <a href="../index.html">← View Interactive Portfolio</a>
+      <button onclick="window.print()">Print / Save PDF</button>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <h1>Ashutosh Kumar</h1>
+    <div class="tagline">Senior Frontend Engineer &bull; Senior UI Developer (8+ Years Experience)</div>
+    <div class="contact-bar">
+      <span>📍 New Delhi, India</span>
+      <span class="sep">&bull;</span>
+      <span>📞 <a href="tel:+919310681373">+91 9310681373</a></span>
+      <span class="sep">&bull;</span>
+      <span>✉️ <a href="mailto:kumar.ashu872@gmail.com">kumar.ashu872@gmail.com</a></span>
+      <span class="sep">&bull;</span>
+      <span>🔗 <a href="https://linkedin.com/in/kumarashu872" target="_blank" rel="noopener">linkedin.com/in/kumarashu872</a></span>
+      <span class="sep">&bull;</span>
+      <span>🌐 <a href="https://kumarashu872.github.io/portfolio/" target="_blank" rel="noopener">Interactive Portfolio</a></span>
+    </div>
+  </header>
+
+  <!-- Professional Summary -->
+  <section>
+    <h2>Professional Summary</h2>
+    <p class="summary-text">
+      <strong>Senior Frontend Engineer and Senior UI Developer</strong> with <strong>8+ years of professional experience</strong> delivering robust, high-performance web applications, scalable component architectures, and responsive digital interfaces for global technology leaders including <strong>Samsung SDS</strong> and <strong>Cisco</strong>. Expert in converting complex Figma and Zeplin specifications into pixel-perfect, accessible (WCAG 2.1/2.2 AA) production interfaces utilizing HTML5, modern SCSS/CSS3, JavaScript (ES6+), and Angular Material UI. Proven track record in automated browser regression validation using <strong>Playwright</strong>, designing targeted impact-based testing workflows that reduce test turnaround time by up to 65%. Recipient of the prestigious <strong>97/100 Performance Rating Award at Samsung SDS</strong> for exceptional code standards and delivery velocity.
+    </p>
+  </section>
+
+  <!-- Technical Competencies -->
+  <section>
+    <h2>Core Technical Competencies</h2>
+    <table class="skills-table">
+      <tr>
+        <td class="skills-category">Frontend Core:</td>
+        <td class="skills-list">HTML5, CSS3, SCSS/Sass, JavaScript (ES6+), TypeScript fundamentals, jQuery, CSS Grid, Flexbox, Responsive Web Design (RWD), Cross-Browser Compatibility</td>
+      </tr>
+      <tr>
+        <td class="skills-category">UI & Component Systems:</td>
+        <td class="skills-list">Angular Material UI, Bootstrap, Component-Based UI Architecture, Modular CSS Architecture, Pixel-Perfect Implementation, Design-to-Code Translation (Figma, Zeplin, PSD)</td>
+      </tr>
+      <tr>
+        <td class="skills-category">Testing & Quality:</td>
+        <td class="skills-list">Playwright Automation, Playwright Test Runner, Targeted UI Regression Testing, Impact-Aware Validation, Cross-Browser Testing, Test Reporting, Defect Isolation</td>
+      </tr>
+      <tr>
+        <td class="skills-category">Accessibility & Web Standards:</td>
+        <td class="skills-list">WCAG 2.1 / 2.2 Level AA Compliance, Section 508, Semantic HTML, Accessible Forms & Modals, ARIA Landmarks, Performance Optimization, Core Web Vitals</td>
+      </tr>
+      <tr>
+        <td class="skills-category">Email & CMS Engineering:</td>
+        <td class="skills-list">Cross-Client Responsive HTML Email Development (Litmus/Email on Acid verified), WordPress Theme Customization, Landing Page Optimization</td>
+      </tr>
+      <tr>
+        <td class="skills-category">Tools & AI Workflows:</td>
+        <td class="skills-list">Git, GitHub, VS Code, Cursor AI, Claude, Jira, ClickUp, Chrome DevTools, Agile / Scrum Methodology, Code Reviews</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Professional Experience -->
+  <section>
+    <h2>Professional Experience</h2>
+
+    <!-- Wondrfly -->
+    <div class="experience-item">
+      <div class="role-row">
+        <div>
+          <span class="role-title">Frontend Developer (Contract)</span> &bull; <span class="role-company">Wondrfly</span>
+        </div>
+        <span class="role-dates">Sep 2025 – Present</span>
+      </div>
+      <div class="role-location">Remote &bull; Web Platform: <a href="https://www.wondrfly.com" target="_blank" rel="noopener">wondrfly.com</a></div>
+      <ul class="bullets">
+        <li>Engineer and maintain responsive, pixel-perfect user interfaces from high-fidelity Figma designs using <strong>HTML5, SCSS, JavaScript (ES6+), and Angular Material UI</strong>.</li>
+        <li>Architect reusable component patterns and maintain scalable stylesheet structures ensuring cross-browser visual consistency across complex responsive breakpoints.</li>
+        <li>Spearhead <strong>Playwright-based browser automation</strong> suites to validate UI behavior, prevent regressions across critical user onboarding and booking journeys, and ensure zero visual breakage.</li>
+        <li>Designed an <strong>impact-based test workflow</strong> connecting Git changeset analysis with targeted Playwright execution, cutting test execution and verification cycles by <strong>~65%</strong> compared to full-suite runs.</li>
+        <li>Leverage AI-augmented engineering workflows (<strong>Cursor AI, Claude</strong>) to accelerate root-cause analysis of UI anomalies and synthesize rapid component test harnesses.</li>
+        <li>Maintain strict adherence to <strong>WCAG 2.1 AA accessibility</strong> and Core Web Vitals guidelines, ensuring smooth interactive performance and compliant semantic markup.</li>
+      </ul>
+    </div>
+
+    <!-- Freelance -->
+    <div class="experience-item">
+      <div class="role-row">
+        <div>
+          <span class="role-title">Senior Frontend Consultant (Freelance)</span> &bull; <span class="role-company">Multiple Commercial Clients</span>
+        </div>
+        <span class="role-dates">Mar 2023 – Aug 2025</span>
+      </div>
+      <div class="role-location">Remote &bull; Client Platforms: <a href="https://www.buddhatrail.com" target="_blank" rel="noopener">Buddha Trail</a>, <a href="https://www.tripknock.com" target="_blank" rel="noopener">Tripknock</a>, <a href="https://urjaforwomen.org" target="_blank" rel="noopener">Urja for Women</a>, <a href="https://www.msp.asia" target="_blank" rel="noopener">MSP Asia</a>, <a href="https://toplad.in" target="_blank" rel="noopener">Toplad</a></div>
+      <ul class="bullets">
+        <li>Delivered end-to-end responsive web applications and landing pages for funded startups, commercial enterprises, and non-profits, achieving 100% on-time milestone delivery.</li>
+        <li>Constructed the international travel portal for <strong>Buddha Trail</strong> (<a href="https://www.buddhatrail.com" target="_blank" rel="noopener">buddhatrail.com</a>) and dynamic tour booking portal for <strong>Tripknock</strong> (<a href="https://www.tripknock.com" target="_blank" rel="noopener">tripknock.com</a>) featuring responsive catalog navigation and high-converting search filters.</li>
+        <li>Engineered accessibility-compliant web platform for <strong>Urja for Women</strong> (<a href="https://urjaforwomen.org" target="_blank" rel="noopener">urjaforwomen.org</a>) and clean corporate showcase for <strong>MSP Asia</strong> (<a href="https://www.msp.asia" target="_blank" rel="noopener">msp.asia</a>).</li>
+        <li>Customized WordPress themes and architected lightweight, semantic landing pages achieving sub-2-second load times and high mobile conversion.</li>
+      </ul>
+    </div>
+
+    <!-- Samsung SDS -->
+    <div class="experience-item">
+      <div class="role-row">
+        <div>
+          <span class="role-title">Assistant Manager – Web Publisher</span> &bull; <span class="role-company">Samsung SDS</span>
+        </div>
+        <span class="role-dates">Sep 2022 – Mar 2023</span>
+      </div>
+      <div class="role-location">New Delhi, India &bull; Enterprise Platforms (Metadata Platform &bull; Annual General Meeting AGM Platform)</div>
+      <div class="award-badge">
+        🏆 <strong>Honors Award: 97/100 Performance Rating</strong> — Awarded for exceptional code quality, UI precision, and consistent on-schedule delivery across enterprise Samsung HQ platform deliverables.
+      </div>
+      <ul class="bullets">
+        <li>Authored and maintained mission-critical enterprise web interfaces for Samsung HQ platforms, adhering to Samsung's proprietary global UI frameworks and design guidelines.</li>
+        <li>Delivered responsive, accessible UI modules for the <strong>Samsung SDS Metadata Platform</strong> (data dictionary navigation, schema viewers, metadata search) and the high-security <strong>Annual General Meeting (AGM) Platform</strong>.</li>
+        <li>Collaborated seamlessly with distributed engineering teams across South Korea and India to enforce strict cross-browser standards and pixel-perfect fidelity.</li>
+      </ul>
+    </div>
+
+    <!-- Experience Commerce -->
+    <div class="experience-item">
+      <div class="role-row">
+        <div>
+          <span class="role-title">Web Publisher &amp; UI Designer</span> &bull; <span class="role-company">Experience Commerce (Client: Samsung SDS)</span>
+        </div>
+        <span class="role-dates">Aug 2021 – Sep 2022</span>
+      </div>
+      <div class="role-location">New Delhi, India</div>
+      <ul class="bullets">
+        <li>Published production web pages from Zeplin specifications and technical requirement documents for core Samsung SDS enterprise platforms.</li>
+        <li>Conducted rigorous multi-device and cross-browser QA checks, championing reusable and scalable CSS patterns.</li>
+        <li>Demonstrated exceptional domain competence and delivery velocity, directly resulting in promotion to an on-role position with Samsung SDS.</li>
+      </ul>
+    </div>
+
+    <!-- Mindrops -->
+    <div class="experience-item">
+      <div class="role-row">
+        <div>
+          <span class="role-title">UI/UX &amp; Frontend Developer</span> &bull; <span class="role-company">Mindrops</span>
+        </div>
+        <span class="role-dates">Aug 2020 – Aug 2021</span>
+      </div>
+      <div class="role-location">New Delhi, India &bull; Client Platform: <a href="https://mindrops.com" target="_blank" rel="noopener">mindrops.com</a></div>
+      <ul class="bullets">
+        <li>Engineered clean, responsive interfaces aligned with functional business requirements for e-commerce, education, and SaaS clients.</li>
+        <li>Converted complex visual UI assets into semantic, accessible HTML5/CSS3 layouts with robust cross-browser support across desktop, tablet, and mobile.</li>
+        <li>Built modular UI component libraries and engineered high-deliverability responsive HTML email campaigns verified across 20+ email clients.</li>
+      </ul>
+    </div>
+
+    <!-- Infinity Labs India -->
+    <div class="experience-item">
+      <div class="role-row">
+        <div>
+          <span class="role-title">Associate Software Engineer</span> &bull; <span class="role-company">Infinity Labs India (Client: Cisco)</span>
+        </div>
+        <span class="role-dates">Dec 2018 – Jul 2020</span>
+      </div>
+      <div class="role-location">New Delhi, India &bull; Enterprise Platforms: Cisco Business Process Automation (BPA) &bull; Cisco SD-WAN UI</div>
+      <ul class="bullets">
+        <li>Developed frontend interfaces for the <strong>Cisco Business Process Automation (BPA) Portal</strong> and contributed UI screens for <strong>Cisco SD-WAN</strong> enterprise tooling.</li>
+        <li>Built interactive wireframes, functional UI prototypes, and production components using <strong>HTML, CSS, Bootstrap, and Angular Material UI</strong>.</li>
+        <li>Collaborated within an Agile engineering team to implement interface enhancements, resolve frontend defects, and maintain consistent enterprise design guidelines.</li>
+      </ul>
+    </div>
+
+    <!-- Codifier Technologies -->
+    <div class="experience-item">
+      <div class="role-row">
+        <div>
+          <span class="role-title">Frontend Developer</span> &bull; <span class="role-company">Codifier Technologies</span>
+        </div>
+        <span class="role-dates">Nov 2016 – Jun 2018</span>
+      </div>
+      <div class="role-location">New Delhi, India &bull; Web Platform: <a href="https://codifier.co" target="_blank" rel="noopener">codifier.co</a></div>
+      <ul class="bullets">
+        <li>Delivered responsive WordPress websites and implemented pixel-perfect web pages from Photoshop (PSD) design mockups.</li>
+        <li>Engineered responsive, cross-client HTML email marketing templates and supported multiple concurrent client deliverables under strict deadlines.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education & Credentials -->
+  <section>
+    <h2>Education &amp; Academic Credentials</h2>
+    <div class="edu-item">
+      <div>
+        <span class="edu-degree">Master of Computer Applications (MCA)</span> &bull; <span class="edu-inst">Guru Gobind Singh Indraprastha University (GGSIPU), New Delhi</span>
+      </div>
+      <span class="edu-year">2013 – 2016</span>
+    </div>
+    <div class="edu-item">
+      <div>
+        <span class="edu-degree">Bachelor of Computer Applications (BCA)</span> &bull; <span class="edu-inst">Sikkim Manipal University</span>
+      </div>
+      <span class="edu-year">2010 – 2013</span>
+    </div>
+  </section>
+
+  <!-- Key Projects Reference Table (ATS Searchable) -->
+  <section>
+    <h2>Selected Key Projects &amp; Live Implementations</h2>
+    <table class="skills-table">
+      <tr>
+        <td class="skills-category">Samsung SDS Metadata &amp; AGM:</td>
+        <td class="skills-list">Enterprise data dictionary and secure voting interfaces delivered for Samsung HQ (97/100 performance rating).</td>
+      </tr>
+      <tr>
+        <td class="skills-category">Cisco BPA &amp; SD-WAN:</td>
+        <td class="skills-list">Enterprise network automation portals and SD-WAN UI components engineered with Angular Material UI.</td>
+      </tr>
+      <tr>
+        <td class="skills-category">Wondrfly:</td>
+        <td class="skills-list"><a href="https://www.wondrfly.com" target="_blank" rel="noopener">wondrfly.com</a> &bull; Children's activity marketplace built with SCSS, Angular Material, and Playwright targeted regression tests.</td>
+      </tr>
+      <tr>
+        <td class="skills-category">Buddha Trail:</td>
+        <td class="skills-list"><a href="https://www.buddhatrail.com" target="_blank" rel="noopener">buddhatrail.com</a> &bull; Buddhist pilgrimage travel portal with responsive package browsing and booking workflows.</td>
+      </tr>
+      <tr>
+        <td class="skills-category">Codifier:</td>
+        <td class="skills-list"><a href="https://codifier.co" target="_blank" rel="noopener">codifier.co</a> &bull; Tech consulting agency website with interactive UI components and optimized typography.</td>
+      </tr>
+      <tr>
+        <td class="skills-category">MSP Asia:</td>
+        <td class="skills-list"><a href="https://www.msp.asia" target="_blank" rel="noopener">msp.asia</a> &bull; IT solutions corporate website with responsive showcase and fast loading times.</td>
+      </tr>
+      <tr>
+        <td class="skills-category">Tripknock:</td>
+        <td class="skills-list"><a href="https://www.tripknock.com" target="_blank" rel="noopener">tripknock.com</a> &bull; Curated vacation booking engine with responsive travel package catalog.</td>
+      </tr>
+      <tr>
+        <td class="skills-category">Urja for Women:</td>
+        <td class="skills-list"><a href="https://urjaforwomen.org" target="_blank" rel="noopener">urjaforwomen.org</a> &bull; NGO portal engineered with accessible forms, donation CTA, and WCAG standards.</td>
+      </tr>
+    </table>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-cisco-sdwan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a192f" />
+      <stop offset="100%" stop-color="#112240" />
+    </linearGradient>
+    <linearGradient id="cardBg-cisco-sdwan" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03" />
+    </linearGradient>
+    <linearGradient id="accentGlow-cisco-sdwan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d2d3" />
+      <stop offset="100%" stop-color="#64ffda" />
+    </linearGradient>
+  </defs>
+
+  <!-- Browser Frame Window -->
+  <rect width="800" height="500" rx="14" fill="#0d1117" />
+  
+  <!-- Browser Chrome Topbar -->
+  <rect width="800" height="42" rx="14" fill="#161b22" />
+  <rect y="24" width="800" height="18" fill="#161b22" />
+  
+  <!-- Window Controls -->
+  <circle cx="24" cy="21" r="6" fill="#ff5f56" />
+  <circle cx="44" cy="21" r="6" fill="#ffbd2e" />
+  <circle cx="64" cy="21" r="6" fill="#27c93f" />
+
+  <!-- URL Address Bar -->
+  <rect x="170" y="9" width="460" height="24" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1" />
+  <g transform="translate(184, 15)">
+    <path d="M4 5.5V3.5C4 2.1 5.1 1 6.5 1s2.5 1.1 2.5 2.5v2m-6 0h7a1 1 0 011 1v4a1 1 0 01-1 1h-7a1 1 0 01-1-1v-4a1 1 0 011-1z" fill="none" stroke="#00d2d3" stroke-width="1.2" stroke-linecap="round"/>
+    <text x="18" y="9.5" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">https://sdwan.cisco.corp</text>
+  </g>
+
+  <!-- Body Content -->
+  <g transform="translate(0, 42)">
+    <rect width="800" height="458" fill="url(#bg-cisco-sdwan)" />
+
+    <!-- Ambient background gradients -->
+    <circle cx="680" cy="80" r="160" fill="#00d2d3" opacity="0.18" filter="blur(40px)" />
+    <circle cx="120" cy="360" r="130" fill="#64ffda" opacity="0.12" filter="blur(30px)" />
+
+    <!-- App Header -->
+    <rect width="800" height="48" fill="#000000" fill-opacity="0.3" />
+    <line x1="0" y1="48" x2="800" y2="48" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1" />
+    <rect x="36" y="14" width="20" height="20" rx="5" fill="url(#accentGlow-cisco-sdwan)" />
+    <text x="64" y="29" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">Cisco SD-WAN Portal</text>
+
+    <!-- Header navigation items mock -->
+    <g transform="translate(480, 18)">
+      <rect x="0" y="0" width="50" height="12" rx="6" fill="#ffffff" fill-opacity="0.15" />
+      <rect x="65" y="0" width="50" height="12" rx="6" fill="#ffffff" fill-opacity="0.15" />
+      <rect x="130" y="0" width="50" height="12" rx="6" fill="#ffffff" fill-opacity="0.15" />
+      <rect x="195" y="-3" width="85" height="20" rx="10" fill="url(#accentGlow-cisco-sdwan)" />
+      <text x="237" y="11" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" text-anchor="middle">PRODUCTION</text>
+    </g>
+
+    <!-- Specific Mockup UI -->
+    
+        <g transform="translate(36, 68)">
+          <rect width="232" height="110" rx="10" fill="url(#cardBg-cisco-sdwan)" stroke="#00d2d3" stroke-opacity="0.3"/>
+          <text x="16" y="28" fill="#8892b0" font-family="system-ui" font-size="11">CONNECTED EDGE ROUTERS</text>
+          <text x="16" y="64" fill="#00d2d3" font-family="system-ui" font-size="28" font-weight="800">4,819</text>
+          <text x="16" y="90" fill="#64ffda" font-family="system-ui" font-size="11">● 100% Operational In-Sync</text>
+
+          <g transform="translate(248, 0)">
+            <rect width="232" height="110" rx="10" fill="url(#cardBg-cisco-sdwan)" stroke="#ffffff" stroke-opacity="0.1"/>
+            <text x="16" y="28" fill="#8892b0" font-family="system-ui" font-size="11">NETWORK TRAFFIC THROUGHPUT</text>
+            <text x="16" y="64" fill="#64ffda" font-family="system-ui" font-size="28" font-weight="800">84.2 <tspan font-size="16">Tbps</tspan></text>
+            <text x="16" y="90" fill="#64ffda" font-family="system-ui" font-size="11">↑ 12% peak bandwidth capacity</text>
+          </g>
+
+          <g transform="translate(496, 0)">
+            <rect width="232" height="110" rx="10" fill="url(#cardBg-cisco-sdwan)" stroke="#ffffff" stroke-opacity="0.1"/>
+            <text x="16" y="28" fill="#8892b0" font-family="system-ui" font-size="11">AVERAGE JITTER &amp; PACKET LOSS</text>
+            <text x="16" y="64" fill="#38bdf8" font-family="system-ui" font-size="28" font-weight="800">0.002%</text>
+            <text x="16" y="90" fill="#22c55e" font-family="system-ui" font-size="11">SLA Level 1 Guaranteed</text>
+          </g>
+        </g>
+        <g transform="translate(36, 192)">
+          <rect width="728" height="215" rx="10" fill="url(#cardBg-cisco-sdwan)" stroke="#ffffff" stroke-opacity="0.12"/>
+          <text x="20" y="28" fill="#ffffff" font-family="system-ui" font-size="13" font-weight="700">Global SD-WAN Fabric Telemetry &amp; Latency Heatmap</text>
+          
+          <path d="M 30 140 Q 110 60 190 120 T 350 90 T 510 130 T 670 70 L 700 80" fill="none" stroke="#00d2d3" stroke-width="3"/>
+          <path d="M 30 160 Q 110 110 190 140 T 350 120 T 510 150 T 670 100 L 700 110" fill="none" stroke="#64ffda" stroke-width="2" stroke-dasharray="4"/>
+          
+          <circle cx="190" cy="120" r="5" fill="#00d2d3"/>
+          <circle cx="350" cy="90" r="5" fill="#00d2d3"/>
+          <circle cx="510" cy="130" r="5" fill="#00d2d3"/>
+          <circle cx="670" cy="70" r="5" fill="#00d2d3"/>
+          
+          <g transform="translate(30, 180)">
+            <rect x="0" y="0" width="12" height="12" rx="3" fill="#00d2d3"/>
+            <text x="20" y="10" fill="#8892b0" font-family="system-ui" font-size="11">Primary MPLS Tunnel</text>
+            <rect x="180" y="0" width="12" height="12" rx="3" fill="#64ffda"/>
+            <text x="200" y="10" fill="#8892b0" font-family="system-ui" font-size="11">Broadband Internet Failover</text>
+            <rect x="400" y="0" width="12" height="12" rx="3" fill="#38bdf8"/>
+            <text x="420" y="10" fill="#8892b0" font-family="system-ui" font-size="11">Direct Cloud OnRamp (AWS &amp; Azure)</text>
+          </g>
+        </g>
+      
+  </g>
+</svg>

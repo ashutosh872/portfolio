@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-buddha-trail" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142718" />
+      <stop offset="100%" stop-color="#1c3d22" />
+    </linearGradient>
+    <linearGradient id="cardBg-buddha-trail" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03" />
+    </linearGradient>
+    <linearGradient id="accentGlow-buddha-trail" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4ade80" />
+      <stop offset="100%" stop-color="#fb923c" />
+    </linearGradient>
+  </defs>
+
+  <!-- Browser Frame Window -->
+  <rect width="800" height="500" rx="14" fill="#0d1117" />
+  
+  <!-- Browser Chrome Topbar -->
+  <rect width="800" height="42" rx="14" fill="#161b22" />
+  <rect y="24" width="800" height="18" fill="#161b22" />
+  
+  <!-- Window Controls -->
+  <circle cx="24" cy="21" r="6" fill="#ff5f56" />
+  <circle cx="44" cy="21" r="6" fill="#ffbd2e" />
+  <circle cx="64" cy="21" r="6" fill="#27c93f" />
+
+  <!-- URL Address Bar -->
+  <rect x="170" y="9" width="460" height="24" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1" />
+  <g transform="translate(184, 15)">
+    <path d="M4 5.5V3.5C4 2.1 5.1 1 6.5 1s2.5 1.1 2.5 2.5v2m-6 0h7a1 1 0 011 1v4a1 1 0 01-1 1h-7a1 1 0 01-1-1v-4a1 1 0 011-1z" fill="none" stroke="#4ade80" stroke-width="1.2" stroke-linecap="round"/>
+    <text x="18" y="9.5" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">https://capitaltrails.in</text>
+  </g>
+
+  <!-- Body Content -->
+  <g transform="translate(0, 42)">
+    <rect width="800" height="458" fill="url(#bg-buddha-trail)" />
+
+    <!-- Ambient background gradients -->
+    <circle cx="680" cy="80" r="160" fill="#4ade80" opacity="0.18" filter="blur(40px)" />
+    <circle cx="120" cy="360" r="130" fill="#fb923c" opacity="0.12" filter="blur(30px)" />
+
+    <!-- App Header -->
+    <rect width="800" height="48" fill="#000000" fill-opacity="0.3" />
+    <line x1="0" y1="48" x2="800" y2="48" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1" />
+    <rect x="36" y="14" width="20" height="20" rx="5" fill="url(#accentGlow-buddha-trail)" />
+    <text x="64" y="29" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">Buddha Trail</text>
+
+    <!-- Header navigation items mock -->
+    <g transform="translate(480, 18)">
+      <rect x="0" y="0" width="50" height="12" rx="6" fill="#ffffff" fill-opacity="0.15" />
+      <rect x="65" y="0" width="50" height="12" rx="6" fill="#ffffff" fill-opacity="0.15" />
+      <rect x="130" y="0" width="50" height="12" rx="6" fill="#ffffff" fill-opacity="0.15" />
+      <rect x="195" y="-3" width="85" height="20" rx="10" fill="url(#accentGlow-buddha-trail)" />
+      <text x="237" y="11" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" text-anchor="middle">PRODUCTION</text>
+    </g>
+
+    <!-- Specific Mockup UI -->
+    
+        <g transform="translate(36, 68)">
+          <rect width="728" height="130" rx="10" fill="url(#cardBg-buddha-trail)" stroke="#4ade80" stroke-opacity="0.3"/>
+          <text x="24" y="32" fill="#ffffff" font-family="system-ui" font-size="20" font-weight="800">The Buddha Trails: Singalila Ridge Ultra</text>
+          <text x="24" y="55" fill="#bbf7d0" font-family="system-ui" font-size="12">100K / 65K / 30K High-Altitude Mountain Marathon Overlooking Mt. Kanchenjunga</text>
+          
+          <path d="M 24 110 L 100 85 L 180 95 L 260 65 L 360 80 L 460 45 L 560 70 L 660 50 L 700 80" fill="none" stroke="#fb923c" stroke-width="3"/>
+          <text x="24" y="125" fill="#a7f3d0" font-family="system-ui" font-size="9">Rimbick (2,100m)</text>
+          <text x="460" y="38" fill="#fb923c" font-family="system-ui" font-size="9" font-weight="700">▲ Sandakphu Peak (3,636m)</text>
+          <text x="650" y="125" fill="#a7f3d0" font-family="system-ui" font-size="9">Phalut (3,600m)</text>
+        </g>
+        <g transform="translate(36, 210)">
+          <rect width="232" height="195" rx="10" fill="url(#cardBg-buddha-trail)" stroke="#ffffff" stroke-opacity="0.1"/>
+          <rect x="14" y="14" width="70" height="22" rx="4" fill="#fb923c"/>
+          <text x="49" y="29" fill="#000000" font-family="system-ui" font-size="11" font-weight="800" text-anchor="middle">100 KM</text>
+          <text x="14" y="60" fill="#ffffff" font-family="system-ui" font-size="15" font-weight="700">The Buddha 100</text>
+          <text x="14" y="82" fill="#bbf7d0" font-family="system-ui" font-size="11">Elevation Gain: +5,200m</text>
+          <text x="14" y="100" fill="#bbf7d0" font-family="system-ui" font-size="11">Cut-off Time: 28 Hours</text>
+          <text x="14" y="118" fill="#fb923c" font-family="system-ui" font-size="11">4 ITRA Points Qualifying</text>
+          <rect x="14" y="142" width="204" height="36" rx="6" fill="#4ade80"/>
+          <text x="116" y="165" fill="#000000" font-family="system-ui" font-size="12" font-weight="700" text-anchor="middle">Register Runner</text>
+
+          <g transform="translate(248, 0)">
+            <rect width="232" height="195" rx="10" fill="url(#cardBg-buddha-trail)" stroke="#ffffff" stroke-opacity="0.1"/>
+            <rect x="14" y="14" width="70" height="22" rx="4" fill="#4ade80"/>
+            <text x="49" y="29" fill="#000000" font-family="system-ui" font-size="11" font-weight="800" text-anchor="middle">65 KM</text>
+            <text x="14" y="60" fill="#ffffff" font-family="system-ui" font-size="15" font-weight="700">Singalila Ridge Run</text>
+            <text x="14" y="82" fill="#bbf7d0" font-family="system-ui" font-size="11">Elevation Gain: +3,400m</text>
+            <text x="14" y="100" fill="#bbf7d0" font-family="system-ui" font-size="11">Cut-off Time: 16 Hours</text>
+            <text x="14" y="118" fill="#4ade80" font-family="system-ui" font-size="11">3 ITRA Points Qualifying</text>
+            <rect x="14" y="142" width="204" height="36" rx="6" fill="#ffffff" fill-opacity="0.1" stroke="#4ade80" stroke-width="1"/>
+            <text x="116" y="165" fill="#4ade80" font-family="system-ui" font-size="12" font-weight="700" text-anchor="middle">View Route GPS</text>
+          </g>
+
+          <g transform="translate(496, 0)">
+            <rect width="232" height="195" rx="10" fill="url(#cardBg-buddha-trail)" stroke="#ffffff" stroke-opacity="0.1"/>
+            <rect x="14" y="14" width="70" height="22" rx="4" fill="#a7f3d0"/>
+            <text x="49" y="29" fill="#000000" font-family="system-ui" font-size="11" font-weight="800" text-anchor="middle">30 KM</text>
+            <text x="14" y="60" fill="#ffffff" font-family="system-ui" font-size="15" font-weight="700">Pine Forest Trail</text>
+            <text x="14" y="82" fill="#bbf7d0" font-family="system-ui" font-size="11">Elevation Gain: +1,200m</text>
+            <text x="14" y="100" fill="#bbf7d0" font-family="system-ui" font-size="11">Cut-off Time: 7 Hours</text>
+            <text x="14" y="118" fill="#a7f3d0" font-family="system-ui" font-size="11">Open for Beginners</text>
+            <rect x="14" y="142" width="204" height="36" rx="6" fill="#ffffff" fill-opacity="0.1" stroke="#a7f3d0" stroke-width="1"/>
+            <text x="116" y="165" fill="#a7f3d0" font-family="system-ui" font-size="12" font-weight="700" text-anchor="middle">View Route GPS</text>
+          </g>
+        </g>
+      
+  </g>
+</svg>

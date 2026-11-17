@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Ashutosh Kumar — Senior Frontend / UI Engineer with 8+ years experience building enterprise design systems and responsive web applications for Samsung SDS, Cisco, Wondrfly, and leading commercial brands.">
+  <meta name="keywords" content="Ashutosh Kumar, Senior Frontend Engineer, UI Developer, Angular Material UI, Design Systems, HTML5, SCSS, JavaScript, Playwright, WCAG Accessibility, Web Performance">
+  <meta name="author" content="Ashutosh Kumar">
+  <title>Ashutosh Kumar — Senior Frontend Engineer & UI Architect</title>
+
+  <!-- OpenGraph / Social Sharing Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ashutosh Kumar — Senior Frontend Engineer & UI Architect">
+  <meta property="og:description" content="8+ years enterprise experience delivering scalable design systems, pixel-perfect web interfaces, and automated UI testing for Samsung SDS, Cisco, and high-growth brands.">
+  <meta property="og:image" content="assets/projects/wondrfly.svg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Background Lighting -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="ambient-circle-1"></div>
+    <div class="ambient-circle-2"></div>
+    <div class="ambient-circle-3"></div>
+  </div>
+  <div class="bg-mesh-pattern" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       Site Header & Sticky Navigation
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="nav-wrapper" aria-label="Main Navigation">
+        <!-- Brand Link -->
+        <a href="#hero" class="brand-link" aria-label="Ashutosh Kumar Home">
+          <div class="monogram-badge">AK</div>
+          <div class="brand-text">
+            <span class="brand-name">Ashutosh Kumar</span>
+            <span class="brand-role">Senior Frontend Engineer</span>
+          </div>
+        </a>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero" class="nav-link active">About</a></li>
+          <li><a href="#projects" class="nav-link">Selected Works</a></li>
+          <li><a href="#playground" class="nav-link">UI Playground</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Nav Action Buttons -->
+        <div class="nav-actions">
+          <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Theme (Dark/Light)">
+            <!-- Sun Icon (for dark mode) -->
+            <svg id="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <!-- Moon Icon (for light mode) -->
+            <svg id="moon-icon" style="display:none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <a href="assets/Ashutosh_Kumar_Resume.pdf" class="btn btn-secondary btn-resume-nav" download="Ashutosh_Kumar_Resume.pdf">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            <span>Resume</span>
+          </a>
+
+          <button class="mobile-toggle-btn" id="mobile-toggle-btn" aria-label="Toggle Mobile Menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Hero Section & Bento Grid Blueprint
+       ========================================================================== -->
+  <main>
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-bento-grid">
+          
+          <!-- Tile 1: Main Hero Bio & Value Proposition -->
+          <div class="hero-main-card">
+            <div>
+              <!-- Availability Status -->
+              <div class="status-pill">
+                <span class="status-dot-pulse"></span>
+                <span>Open for Senior Frontend / UI Engineer Roles</span>
+              </div>
+
+              <div class="hero-subtitle">Senior Frontend Engineer • UI Architect</div>
+              <h1 class="hero-title">
+                Delivering scalable <span class="text-gradient">component systems</span> &amp; enterprise web interfaces.
+              </h1>
+              <p class="hero-bio">
+                Senior Frontend &amp; UI Engineer with <strong>8+ years of dedicated enterprise experience</strong> delivering scalable component architectures, responsive web interfaces, and high-performance solutions for industry leaders including <strong>Samsung SDS, Cisco, and Wondrfly</strong>. Skilled in HTML5, CSS3, SCSS, JavaScript (ES6+), Angular Material UI, WCAG 2.1 accessibility, and Playwright automated testing.
+              </p>
+            </div>
+
+            <!-- Call to Actions -->
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                <span>Explore Works (14)</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+
+              <a href="assets/Ashutosh_Kumar_Resume.pdf" class="btn btn-secondary" download="Ashutosh_Kumar_Resume.pdf">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                <span>Download Resume (PDF)</span>
+              </a>
+
+              <button class="btn btn-outline copy-email-btn" aria-label="Copy Email Address">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span>Copy Email</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Side Bento Stack: Key Metrics, Live Time & Resume Link -->
+          <div class="hero-side-stack">
+            <!-- Metrics Tile -->
+            <div class="bento-metrics-tile">
+              <div class="metric-item">
+                <span class="metric-value highlight-cyan">8+</span>
+                <span class="metric-label">Years Enterprise Experience</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-value highlight-emerald">97/100</span>
+                <span class="metric-label">Code Quality Rating (Samsung SDS)</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-value highlight-amber">14+</span>
+                <span class="metric-label">Enterprise &amp; Client Deployments</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-value">100%</span>
+                <span class="metric-label">WCAG 2.1/2.2 AA Compliance</span>
+              </div>
+            </div>
+
+            <!-- Timezone & Location Card -->
+            <div class="bento-location-card">
+              <div class="location-info">
+                <span class="location-title">Base Location</span>
+                <span class="location-place">📍 New Delhi, India</span>
+              </div>
+              <div class="clock-display">
+                <span class="clock-time" id="live-clock">--:--:--</span>
+                <span class="clock-tz">IST (GMT +5:30)</span>
+              </div>
+            </div>
+
+            <!-- Resume Integration Card -->
+            <div class="bento-resume-pill">
+              <div class="resume-pill-text">
+                <strong>Resume-Ready Portfolio URL</strong>
+                <span>Easily add to your PDF &amp; LinkedIn header</span>
+              </div>
+              <button class="btn btn-secondary copy-email-btn" title="Contact Ashutosh" style="padding: 0.5rem 0.85rem; font-size: 0.8rem;">
+                Get in Touch
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Featured Works & Projects Showcase (Core Requirement)
+         ========================================================================== -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <span>Production Portfolio</span>
+          </div>
+          <h2 class="section-title">Selected Works &amp; Enterprise Platforms</h2>
+          <p class="section-desc">
+            Explore commercial web applications, enterprise governance platforms for Samsung SDS &amp; Cisco, and production UI architectures. Filter by category or search by technology stack.
+          </p>
+        </div>
+
+        <!-- Toolbar: Category Filter Tabs & Live Search -->
+        <div class="projects-toolbar">
+          <div class="filter-tabs" role="tablist">
+            <button class="tab-btn active" data-filter="all" role="tab" aria-selected="true">
+              <span>All Works</span>
+              <span class="tab-badge" id="visible-projects-count">14</span>
+            </button>
+            <button class="tab-btn" data-filter="enterprise" role="tab" aria-selected="false">
+              <span>Enterprise Platforms</span>
+              <span class="tab-badge">4</span>
+            </button>
+            <button class="tab-btn" data-filter="client" role="tab" aria-selected="false">
+              <span>Commercial &amp; Startups</span>
+              <span class="tab-badge">8</span>
+            </button>
+            <button class="tab-btn" data-filter="tooling" role="tab" aria-selected="false">
+              <span>Tooling &amp; Architecture</span>
+              <span class="tab-badge">2</span>
+            </button>
+          </div>
+
+          <div class="search-box-wrapper">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="project-search-input" class="search-input" placeholder="Search by name, tech (SCSS, Playwright, Angular)..." aria-label="Search projects">
+          </div>
+        </div>
+
+        <!-- Projects Grid: All 14 Projects with Name, 2 Lines, Screenshot, and Link -->
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- 1. WONDRFLY -->
+          <article class="project-card" data-category="client">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/wondrfly.svg" alt="Wondrfly Platform Interface Preview" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-online">🟢 Online</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Wondrfly</h3>
+                <span class="project-domain-tag">wondrfly.com</span>
+              </div>
+              <div class="project-two-lines">
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>AI-powered marketplace connecting parents with verified children enrichment classes and camps.</span>
+                </div>
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Engineered responsive pixel-perfect interfaces from Figma and automated end-to-end regression testing.</span>
+                </div>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">Angular Material UI</span>
+                <span class="tech-badge">HTML5/SCSS</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Playwright</span>
+                <span class="tech-badge">WCAG 2.1</span>
+              </div>
+              <div class="card-action-footer">
+                <a href="https://www.wondrfly.com" target="_blank" rel="noopener noreferrer" class="btn-live-link">
+                  <span>Visit Site</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+                <button class="btn-view-details" data-project-trigger="wondrfly">Specs &amp; Impact</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. SAMSUNG SDS METADATA PLATFORM -->
+          <article class="project-card" data-category="enterprise">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/samsung-metadata.svg" alt="Samsung SDS Metadata Platform Preview" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-enterprise">🔒 Enterprise Platform</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Samsung SDS Metadata Platform</h3>
+                <span class="project-domain-tag">Samsung SDS HQ</span>
+              </div>
+              <div class="project-two-lines">
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Enterprise data governance and metadata indexing system managing core business pipelines at Samsung HQ.</span>
+                </div>
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Delivered modular component architectures with strict accessibility standards, earning a 97/100 code rating.</span>
+                </div>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">Enterprise UI Framework</span>
+                <span class="tech-badge">Design Systems</span>
+                <span class="tech-badge">SCSS Architecture</span>
+                <span class="tech-badge">WCAG 2.1</span>
+              </div>
+              <div class="card-action-footer">
+                <button class="btn-enterprise-specs" data-project-trigger="samsung-metadata">
+                  <span>Enterprise Specs 🔒</span>
+                </button>
+                <button class="btn-view-details" data-project-trigger="samsung-metadata">Case Study</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. SAMSUNG SDS AGM PLATFORM -->
+          <article class="project-card" data-category="enterprise">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/samsung-agm.svg" alt="Samsung SDS AGM Platform Preview" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-enterprise">🔒 Enterprise Platform</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Samsung SDS AGM Platform</h3>
+                <span class="project-domain-tag">Samsung SDS HQ</span>
+              </div>
+              <div class="project-two-lines">
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>High-concurrency Annual General Meeting platform facilitating hybrid voting and shareholder proceedings.</span>
+                </div>
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Built fault-tolerant responsive layouts and validated cross-browser behavior across mission-critical devices.</span>
+                </div>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">Internal UI Framework</span>
+                <span class="tech-badge">Angular Components</span>
+                <span class="tech-badge">Responsive CSS</span>
+                <span class="tech-badge">Real-time Tally</span>
+              </div>
+              <div class="card-action-footer">
+                <button class="btn-enterprise-specs" data-project-trigger="samsung-agm">
+                  <span>Enterprise Specs 🔒</span>
+                </button>
+                <button class="btn-view-details" data-project-trigger="samsung-agm">Case Study</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. CISCO BPA PORTAL -->
+          <article class="project-card" data-category="enterprise">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/cisco-bpa.svg" alt="Cisco BPA Portal Preview" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-enterprise">🔒 Enterprise Platform</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Cisco BPA Portal</h3>
+                <span class="project-domain-tag">Cisco Systems</span>
+              </div>
+              <div class="project-two-lines">
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Unified telecom workflow automation portal streamlining enterprise network service provisioning.</span>
+                </div>
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Constructed interactive wireframes and production UI components aligned with Cisco brand design systems.</span>
+                </div>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">Bootstrap</span>
+                <span class="tech-badge">Angular Material UI</span>
+                <span class="tech-badge">HTML5/CSS3</span>
+                <span class="tech-badge">Workflow Canvas</span>
+              </div>
+              <div class="card-action-footer">
+                <button class="btn-enterprise-specs" data-project-trigger="cisco-bpa">
+                  <span>Enterprise Specs 🔒</span>
+                </button>
+                <button class="btn-view-details" data-project-trigger="cisco-bpa">Case Study</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. CISCO SD-WAN INTERFACE SYSTEM -->
+          <article class="project-card" data-category="enterprise">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/cisco-sdwan.svg" alt="Cisco SD-WAN Interface Preview" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-enterprise">🔒 Enterprise Platform</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Cisco SD-WAN Interface System</h3>
+                <span class="project-domain-tag">Cisco Systems</span>
+              </div>
+              <div class="project-two-lines">
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Next-gen software-defined WAN management dashboard monitoring enterprise network topologies in real-time.</span>
+                </div>
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Developed complex data visualization components and responsive UI modules across multi-screen setups.</span>
+                </div>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">Angular Material UI</span>
+                <span class="tech-badge">Modular CSS</span>
+                <span class="tech-badge">Telemetry Dashboards</span>
+                <span class="tech-badge">NOC Operations</span>
+              </div>
+              <div class="card-action-footer">
+                <button class="btn-enterprise-specs" data-project-trigger="cisco-sdwan">
+                  <span>Enterprise Specs 🔒</span>
+                </button>
+                <button class="btn-view-details" data-project-trigger="cisco-sdwan">Case Study</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. TRIPKNOCK -->
+          <article class="project-card" data-category="client">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/tripknock.svg" alt="Tripknock Travel Portal Preview" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-online">🟢 Online</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Tripknock Travels</h3>
+                <span class="project-domain-tag">tripknock.com</span>
+              </div>
+              <div class="project-two-lines">
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Modern holiday discovery and experiential booking platform featuring customized itineraries and tours.</span>
+                </div>
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Translated visual design mockups into blazing-fast mobile-first interfaces with SEO-optimized markup.</span>
+                </div>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">HTML5/SCSS</span>
+                <span class="tech-badge">Modern JavaScript</span>
+                <span class="tech-badge">SEO Architecture</span>
+                <span class="tech-badge">Figma-to-Code</span>
+              </div>
+              <div class="card-action-footer">
+                <a href="https://www.tripknock.com" target="_blank" rel="noopener noreferrer" class="btn-live-link">
+                  <span>Visit Site</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+                <button class="btn-view-details" data-project-trigger="tripknock">Specs &amp; Impact</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. URJA FOR WOMEN -->
+          <article class="project-card" data-category="client">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/urja-for-women.svg" alt="Urja For Women Portal Preview" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-online">🟢 Online</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Urja For Women</h3>
+                <span class="project-domain-tag">urjaforwomen.org</span>
+              </div>
+              <div class="project-two-lines">
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Digital home for a prominent non-profit empowering women through healthcare, shelter, and community training.</span>
+                </div>
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Designed fully accessible, high-contrast layouts with donation funnels and multi-device responsiveness.</span>
+                </div>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">Accessible HTML5</span>
+                <span class="tech-badge">SCSS</span>
+                <span class="tech-badge">WordPress</span>
+                <span class="tech-badge">WCAG 2.1 AA</span>
+              </div>
+              <div class="card-action-footer">
+                <a href="https://urjaforwomen.org" target="_blank" rel="noopener noreferrer" class="btn-live-link">
+                  <span>Visit Site</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+                <button class="btn-view-details" data-project-trigger="urja-for-women">Specs &amp; Impact</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. TOPLAD -->
+          <article class="project-card" data-category="client">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/toplad.svg" alt="Toplad EdTech Learning Ecosystem Preview" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-online">🟢 Online</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Toplad EdTech</h3>
+                <span class="project-domain-tag">toplad.in</span>
+              </div>
+              <div class="project-two-lines">
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Leading ed-tech platform delivering online prep and video lectures for professional CMA/CS certifications.</span>
+                </div>
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Implemented responsive lecture dashboards, course catalog filters, and streamlined student checkout flows.</span>
+                </div>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">JavaScript ES6</span>
+                <span class="tech-badge">CSS Grid</span>
+                <span class="tech-badge">Video Player UI</span>
+                <span class="tech-badge">Checkout Funnel</span>
+              </div>
+              <div class="card-action-footer">
+                <a href="https://toplad.in" target="_blank" rel="noopener noreferrer" class="btn-live-link">
+                  <span>Visit Site</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+                <button class="btn-view-details" data-project-trigger="toplad">Specs &amp; Impact</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. ADDRESS HOME -->
+          <article class="project-card" data-category="client">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/address-home.svg" alt="Address Home Luxury Decor Preview" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-online">🟢 Online</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Address Home</h3>
+                <span class="project-domain-tag">addresshome.com</span>
+              </div>
+              <div class="project-two-lines">
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>High-end luxury home decor and lifestyle e-commerce destination with rich editorial collections.</span>
+                </div>
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Engineered sleek micro-interactions, responsive product grids, and optimized asset loading for Core Web Vitals.</span>
+                </div>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">Luxury E-Commerce</span>
+                <span class="tech-badge">Responsive CSS3</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Core Web Vitals</span>
+              </div>
+              <div class="card-action-footer">
+                <a href="https://www.addresshome.com" target="_blank" rel="noopener noreferrer" class="btn-live-link">
+                  <span>Visit Site</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+                <button class="btn-view-details" data-project-trigger="address-home">Specs &amp; Impact</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 10. TRIPOMATE -->
+          <article class="project-card" data-category="client">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/tripomate.svg" alt="Tripomate Aggregator Preview" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-online">🟢 Online</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Tripomate</h3>
+                <span class="project-domain-tag">tripomate.com</span>
+              </div>
+              <div class="project-two-lines">
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Dynamic flight and hotel aggregation platform with real-time fare comparison and booking workflows.</span>
+                </div>
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Built interactive search filters, date-picker widgets, and cross-browser verified reservation screens.</span>
+                </div>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">HTML5/Bootstrap</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Flight Matrix</span>
+                <span class="tech-badge">API Integration</span>
+              </div>
+              <div class="card-action-footer">
+                <a href="https://www.tripomate.com" target="_blank" rel="noopener noreferrer" class="btn-live-link">
+                  <span>Visit Site</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+                <button class="btn-view-details" data-project-trigger="tripomate">Specs &amp; Impact</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 11. BUDDHA TRAIL -->
+          <article class="project-card" data-category="client">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/buddha-trail.svg" alt="The Buddha Trails Marathon Preview" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-online">🟢 Online</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Buddha Trail</h3>
+                <span class="project-domain-tag">capitaltrails.in</span>
+              </div>
+              <div class="project-two-lines">
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Ultramarathon and high-altitude mountain expedition portal featuring scenic Singalila trail routes.</span>
+                </div>
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Crafted immersive visual storytelling pages, route elevation maps, and frictionless registration forms.</span>
+                </div>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">Modern CSS</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Elevation Maps</span>
+                <span class="tech-badge">ITRA Points</span>
+              </div>
+              <div class="card-action-footer">
+                <a href="https://capitaltrails.in" target="_blank" rel="noopener noreferrer" class="btn-live-link">
+                  <span>Visit Site</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+                <button class="btn-view-details" data-project-trigger="buddha-trail">Specs &amp; Impact</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 12. MINDROPS DIGITAL -->
+          <article class="project-card" data-category="client">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/mindrops.svg" alt="Mindrops Digital Agency Preview" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-online">🟢 Online</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Mindrops Digital</h3>
+                <span class="project-domain-tag">mindrops.com</span>
+              </div>
+              <div class="project-two-lines">
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Agency brand site showcasing custom software engineering, product design, and digital solutions.</span>
+                </div>
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Developed modular UI components, interactive portfolio galleries, and cross-client responsive email templates.</span>
+                </div>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">HTML5/CSS3</span>
+                <span class="tech-badge">Component Architecture</span>
+                <span class="tech-badge">HTML Emails</span>
+                <span class="tech-badge">Responsive QA</span>
+              </div>
+              <div class="card-action-footer">
+                <a href="https://mindrops.com" target="_blank" rel="noopener noreferrer" class="btn-live-link">
+                  <span>Visit Site</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+                <button class="btn-view-details" data-project-trigger="mindrops">Specs &amp; Impact</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 13. CODIFIER TECHNOLOGIES -->
+          <article class="project-card" data-category="client">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/codifier.svg" alt="Codifier Technologies Preview" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-online">🟢 Online</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Codifier Technologies</h3>
+                <span class="project-domain-tag">codifier.in</span>
+              </div>
+              <div class="project-two-lines">
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Creative agency web presence delivering custom web applications and digital transformation services.</span>
+                </div>
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Converted complex PSD designs into standards-compliant HTML/CSS and crafted verified responsive newsletters.</span>
+                </div>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">PSD-to-HTML</span>
+                <span class="tech-badge">WordPress</span>
+                <span class="tech-badge">CSS3 Transitions</span>
+                <span class="tech-badge">Cross-Browser QA</span>
+              </div>
+              <div class="card-action-footer">
+                <a href="https://codifier.in" target="_blank" rel="noopener noreferrer" class="btn-live-link">
+                  <span>Visit Site</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+                <button class="btn-view-details" data-project-trigger="codifier">Specs &amp; Impact</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 14. PLAYWRIGHT IMPACT ENGINE -->
+          <article class="project-card" data-category="tooling">
+            <div class="card-media-wrapper">
+              <img src="assets/projects/playwright-workflow.svg" alt="Playwright Impact Automation Preview" class="card-media-img" loading="lazy">
+              <span class="card-media-badge badge-tooling">⚡ CI/CD &amp; Testing</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="project-title">Impact-Aware Bug Engine</h3>
+                <span class="project-domain-tag">CI/CD Automation</span>
+              </div>
+              <div class="project-two-lines">
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Intelligent test execution framework that analyzes Git diffs and executes only tests for impacted components.</span>
+                </div>
+                <div class="desc-line">
+                  <span class="desc-bullet">▪</span>
+                  <span>Accelerated CI/CD test feedback cycles by 65% while maintaining rigorous end-to-end regression safety.</span>
+                </div>
+              </div>
+              <div class="card-tech-stack">
+                <span class="tech-badge">Playwright Test</span>
+                <span class="tech-badge">Git Diff Analysis</span>
+                <span class="tech-badge">Cursor AI</span>
+                <span class="tech-badge">Node.js</span>
+              </div>
+              <div class="card-action-footer">
+                <button class="btn-enterprise-specs" data-project-trigger="playwright-workflow">
+                  <span>Architecture Specs ⚡</span>
+                </button>
+                <button class="btn-view-details" data-project-trigger="playwright-workflow">Deep Dive</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Interactive UI Engineering Playground & Token Inspector
+         ========================================================================== -->
+    <section class="playground-section" id="playground">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span>Live UI Engineering</span>
+          </div>
+          <h2 class="section-title">Design System Token Sandbox</h2>
+          <p class="section-desc">
+            As a Senior Frontend &amp; UI developer, interface polish lives in mathematical tokens. Interact with this live token sandbox to test dynamic radius tokens, theme color ramps, and real-time WCAG contrast scores.
+          </p>
+        </div>
+
+        <div class="playground-card">
+          <div class="playground-grid">
+            <!-- Controls -->
+            <div class="playground-controls">
+              <div class="control-group">
+                <label for="token-radius-slider" class="control-label">
+                  <span>Border Radius Token (<code style="font-family: var(--font-mono); color: var(--accent-primary);">--radius-interactive</code>)</span>
+                  <span id="token-radius-val" style="font-family: var(--font-mono); font-weight: 700;">12px</span>
+                </label>
+                <input type="range" id="token-radius-slider" class="range-slider" min="0" max="32" value="12">
+              </div>
+
+              <div class="control-group">
+                <label class="control-label">
+                  <span>Primary Brand Token (<code style="font-family: var(--font-mono); color: var(--accent-primary);">--color-accent</code>)</span>
+                </label>
+                <div class="color-swatches">
+                  <button class="swatch-btn active" data-color="#6366f1" data-name="Indigo Glow" data-ratio="8.4:1" style="background-color: #6366f1;" aria-label="Indigo"></button>
+                  <button class="swatch-btn" data-color="#0ea5e9" data-name="Cyan Precision" data-ratio="7.2:1" style="background-color: #0ea5e9;" aria-label="Cyan"></button>
+                  <button class="swatch-btn" data-color="#10b981" data-name="Emerald Enterprise" data-ratio="7.9:1" style="background-color: #10b981;" aria-label="Emerald"></button>
+                  <button class="swatch-btn" data-color="#f59e0b" data-name="Amber Dynamic" data-ratio="6.8:1" style="background-color: #f59e0b;" aria-label="Amber"></button>
+                  <button class="swatch-btn" data-color="#ec4899" data-name="Rose Accent" data-ratio="7.6:1" style="background-color: #ec4899;" aria-label="Rose"></button>
+                </div>
+              </div>
+
+              <div class="control-group">
+                <div class="wcag-score-badge">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>WCAG Contrast Ratio: <strong id="live-contrast-ratio">8.4:1 (WCAG AAA)</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Live Sandbox Preview -->
+            <div class="sandbox-preview-box">
+              <div class="interactive-demo-card" id="interactive-demo-card" style="border-radius: 12px;">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem;">
+                  <span style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--accent-primary);">Live Component Preview</span>
+                  <span style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">CSS Variable Reactive</span>
+                </div>
+                <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.4rem;">Samsung SDS UI Component Spec</h4>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
+                  Reusable component verified across desktop, tablet and mobile with zero layout shift (CLS: 0.00).
+                </p>
+                <button id="interactive-demo-btn" style="background-color: #6366f1; color: #ffffff; border: none; padding: 0.6rem 1.25rem; font-size: 0.85rem; font-weight: 700; border-radius: 8px; cursor: pointer; transition: all 150ms ease;">
+                  Interactive Button
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Work Experience & Career Timeline
+         ========================================================================== -->
+    <section class="experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+            <span>Career Path</span>
+          </div>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-desc">
+            Over 8 years delivering enterprise-grade web applications, mission-critical platforms, and high-velocity frontend solutions.
+          </p>
+        </div>
+
+        <div class="timeline">
+
+          <!-- WONDRFLY -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Frontend Developer (Contract)</h3>
+                  <span class="timeline-company">Wondrfly</span>
+                </div>
+                <span class="timeline-period">Sep 2025 – Present</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Build and maintain responsive, pixel-perfect website interfaces from Figma designs using HTML5, SCSS, JavaScript, and Angular Material UI.</li>
+                <li>Translate design specifications into production-ready UI, ensuring visual consistency across complex layouts and responsive breakpoints.</li>
+                <li>Develop and maintain reusable UI patterns and scalable styling architecture to support long-term codebase maintainability.</li>
+                <li>Contribute to Playwright-based browser automation to validate UI behavior and catch regressions in critical user flows.</li>
+                <li>Designed an impact-based bug-fix workflow concept connecting task context, Git change analysis, and targeted Playwright tests so validation focuses on impacted components.</li>
+                <li>Leverage AI-assisted tools (Cursor AI, Claude) to accelerate bug investigation, automated test generation, and fix-and-retest workflows.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- FREELANCE -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Frontend Developer (Freelance)</h3>
+                  <span class="timeline-company">Multiple Clients &amp; Startups</span>
+                </div>
+                <span class="timeline-period">Mar 2023 – Aug 2025</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Delivered high-quality frontend solutions for startups, commercial businesses, and NGOs, including Tripknock, Tripomate, Urja for Women, Buddha Trail, and Toplad.</li>
+                <li>Converted Figma and PSD design assets into clean, responsive, and production-ready web interfaces with standards-compliant markup.</li>
+                <li>Built and customized WordPress websites and marketing landing pages, applying semantic markup and SEO-friendly implementation.</li>
+                <li>Handled cross-browser UI defect resolution, responsiveness enhancements, and post-launch maintenance across client engagements.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- SAMSUNG SDS -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Assistant Manager - Web Publisher</h3>
+                  <span class="timeline-company">Samsung SDS</span>
+                </div>
+                <span class="timeline-period">Sep 2022 – Mar 2023</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Delivered and maintained enterprise web interfaces for Samsung HQ platforms utilizing internal UI frameworks and design systems.</li>
+                <li>Maintained responsive behavior, content accuracy, and web accessibility standards while collaborating closely with global stakeholders.</li>
+                <li>Delivered core platforms including the Samsung SDS Metadata Platform and Annual General Meeting (AGM) electronic voting platform.</li>
+              </ul>
+              <!-- Honor Callout -->
+              <div class="honors-callout">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+                <span><strong>97/100 Performance Rating Award</strong> — Samsung SDS: Awarded for exceptional code quality, UI precision, and consistent on-schedule platform delivery.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- EXPERIENCE COMMERCE (SAMSUNG CLIENT) -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Web Publisher &amp; Designer</h3>
+                  <span class="timeline-company">Experience Commerce (Samsung SDS Client)</span>
+                </div>
+                <span class="timeline-period">Aug 2021 – Sep 2022</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Published enterprise web pages from Zeplin designs and structured requirement documents for core Samsung SDS platforms.</li>
+                <li>Performed UI quality assurance checks and championed reusable, cross-browser-compatible frontend coding standards.</li>
+                <li>Demonstrated consistent delivery and domain competence, directly facilitating promotion to an on-role position with Samsung SDS.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- MINDROPS -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">UI/UX &amp; Frontend Developer</h3>
+                  <span class="timeline-company">Mindrops</span>
+                </div>
+                <span class="timeline-period">Aug 2020 – Aug 2021</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Designed and developed clean, responsive page layouts strictly aligned with functional and business requirements.</li>
+                <li>Converted visual design assets into accessible HTML/CSS, strengthened semantic and SEO structures, and resolved multi-device UI defects.</li>
+                <li>Engineered modular, reusable UI components and created cross-client compatible HTML email templates.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- INFINITY LABS (CISCO CLIENT) -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Associate Software Engineer</h3>
+                  <span class="timeline-company">Infinity Labs India (Cisco Client)</span>
+                </div>
+                <span class="timeline-period">Dec 2018 – Jul 2020</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Engineered front-end interfaces for the Cisco Business Process Automation (BPA) Portal and contributed to Cisco SD-WAN UI screens.</li>
+                <li>Constructed wireframes, functional prototypes, and production UI components utilizing HTML, CSS, Bootstrap, and Angular Material UI.</li>
+                <li>Collaborated with enterprise cross-functional teams to deploy interface enhancements and uphold consistent design guidelines.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- CODIFIER TECHNOLOGIES -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Frontend Developer</h3>
+                  <span class="timeline-company">Codifier Technologies</span>
+                </div>
+                <span class="timeline-period">Nov 2016 – Jun 2018</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Developed responsive WordPress websites and implemented pixel-perfect web pages from Photoshop (PSD) design mockups.</li>
+                <li>Constructed cross-client verified HTML email templates and supported concurrent client projects under strict release deadlines.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Technical Skills & Architecture Matrix
+         ========================================================================== -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            <span>Competencies</span>
+          </div>
+          <h2 class="section-title">Technical Skills &amp; Architecture Matrix</h2>
+          <p class="section-desc">
+            A verified inventory of frontend engineering capabilities, design system methodologies, and modern development workflows.
+          </p>
+        </div>
+
+        <div class="skills-bento-grid">
+          
+          <!-- Frontend Core -->
+          <div class="skill-category-card">
+            <div class="skill-cat-title">
+              <div class="skill-cat-icon">⚡</div>
+              <span>Frontend Core</span>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-pill">HTML5</span>
+              <span class="skill-pill">CSS3</span>
+              <span class="skill-pill">SCSS / Sass</span>
+              <span class="skill-pill">JavaScript (ES6+)</span>
+              <span class="skill-pill">jQuery</span>
+              <span class="skill-pill">Bootstrap</span>
+              <span class="skill-pill">CSS Grid &amp; Flexbox</span>
+              <span class="skill-pill">Responsive Web Design</span>
+              <span class="skill-pill">Cross-Browser Compatibility</span>
+              <span class="skill-pill">HTML Email Templating</span>
+            </div>
+          </div>
+
+          <!-- UI Engineering & Design Systems -->
+          <div class="skill-category-card">
+            <div class="skill-cat-title">
+              <div class="skill-cat-icon">🎨</div>
+              <span>UI Engineering &amp; Systems</span>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-pill">Angular Material UI</span>
+              <span class="skill-pill">Reusable Components</span>
+              <span class="skill-pill">Component Architecture</span>
+              <span class="skill-pill">Design Systems</span>
+              <span class="skill-pill">Design Tokens</span>
+              <span class="skill-pill">Pixel-Perfect UI</span>
+              <span class="skill-pill">Figma-to-Code</span>
+              <span class="skill-pill">PSD-to-HTML</span>
+            </div>
+          </div>
+
+          <!-- Testing & Automation -->
+          <div class="skill-category-card">
+            <div class="skill-cat-title">
+              <div class="skill-cat-icon">🧪</div>
+              <span>Testing &amp; Automation</span>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-pill">Playwright</span>
+              <span class="skill-pill">Playwright Test</span>
+              <span class="skill-pill">Targeted Regression Testing</span>
+              <span class="skill-pill">UI Behavior Validation</span>
+              <span class="skill-pill">Bug Reproduction</span>
+              <span class="skill-pill">Test Reporting</span>
+              <span class="skill-pill">Impact-Aware Validation</span>
+            </div>
+          </div>
+
+          <!-- Accessibility & Performance -->
+          <div class="skill-category-card">
+            <div class="skill-cat-title">
+              <div class="skill-cat-icon">🚀</div>
+              <span>Accessibility &amp; Performance</span>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-pill">WCAG 2.1 / 2.2</span>
+              <span class="skill-pill">Section 508</span>
+              <span class="skill-pill">Semantic HTML</span>
+              <span class="skill-pill">Accessible Forms</span>
+              <span class="skill-pill">SEO-Friendly Markup</span>
+              <span class="skill-pill">Web Performance Optimization</span>
+              <span class="skill-pill">Core Web Vitals</span>
+              <span class="skill-pill">Scalable CSS Architecture</span>
+            </div>
+          </div>
+
+          <!-- Tools & AI Workflows -->
+          <div class="skill-category-card">
+            <div class="skill-cat-title">
+              <div class="skill-cat-icon">🤖</div>
+              <span>Tools &amp; AI Workflows</span>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-pill">Cursor AI</span>
+              <span class="skill-pill">Claude</span>
+              <span class="skill-pill">ChatGPT</span>
+              <span class="skill-pill">Figma</span>
+              <span class="skill-pill">Zeplin</span>
+              <span class="skill-pill">Photoshop</span>
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">Jira &amp; ClickUp</span>
+              <span class="skill-pill">VS Code</span>
+              <span class="skill-pill">Agile / Scrum</span>
+            </div>
+          </div>
+
+          <!-- Education & Credentials -->
+          <div class="skill-category-card">
+            <div class="skill-cat-title">
+              <div class="skill-cat-icon">🎓</div>
+              <span>Education &amp; Degrees</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+              <div>
+                <strong style="color: var(--text-primary); font-size: 0.95rem; display: block;">Master of Computer Applications (MCA)</strong>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">Guru Gobind Singh Indraprastha University (2013 – 2016)</span>
+              </div>
+              <div>
+                <strong style="color: var(--text-primary); font-size: 0.95rem; display: block;">Bachelor of Computer Applications (BCA)</strong>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">Sikkim Manipal University (2010 – 2013)</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Contact & Conversion Section
+         ========================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="section-tag" style="justify-content: center;">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>Let's Build Together</span>
+          </div>
+          <h2 class="contact-title">Ready to elevate your frontend engineering?</h2>
+          <p class="contact-desc">
+            Available for Senior Frontend / UI Engineer roles and high-impact design system initiatives. Let's discuss how I can bring enterprise craftsmanship and velocity to your engineering team.
+          </p>
+
+          <div class="contact-actions-row">
+            <a href="mailto:kumar.ashu872@gmail.com" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>kumar.ashu872@gmail.com</span>
+            </a>
+
+            <button class="btn btn-secondary copy-email-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Email</span>
+            </button>
+
+            <a href="https://linkedin.com/in/kumarashu872" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <span>LinkedIn Profile</span>
+            </a>
+
+            <a href="tel:+919310681373" class="btn btn-outline">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>+91 9310681373</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Site Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <span class="footer-copy">© 2026 Ashutosh Kumar • Senior Frontend Engineer &amp; UI Architect.</span>
+          <span class="footer-compliance">Crafted with semantic HTML5, CSS3 Custom Properties &amp; Vanilla ES6+ • Zero external dependencies • 100 Lighthouse Performance.</span>
+        </div>
+
+        <div class="footer-social-links">
+          <a href="https://linkedin.com/in/kumarashu872" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn Profile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="mailto:kumar.ashu872@gmail.com" class="social-icon-link" aria-label="Email Ashutosh">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+          <a href="assets/Ashutosh_Kumar_Resume.pdf" download="Ashutosh_Kumar_Resume.pdf" class="social-icon-link" aria-label="Download ATS Resume PDF">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Interactive Case Study / Project Specs Modal Dialog
+       ========================================================================== -->
+  <div class="modal-overlay" id="case-study-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Case Study Modal">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-media-wrap">
+        <img id="modal-img" src="" alt="Project Mockup Preview">
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-title-row">
+          <div>
+            <h3 class="modal-title" id="modal-title">Project Title</h3>
+            <span style="font-size: 0.85rem; color: var(--text-muted);" id="modal-role">Role Description</span>
+          </div>
+          <span class="modal-meta-tag" id="modal-domain">domain.com</span>
+        </div>
+
+        <div class="modal-two-lines-highlight">
+          <div style="font-size: 0.92rem; font-weight: 600; color: var(--text-primary);" id="modal-line1">Line 1 description</div>
+          <div style="font-size: 0.88rem; color: var(--text-secondary);" id="modal-line2">Line 2 description</div>
+        </div>
+
+        <div>
+          <h4 class="modal-section-title">Frontend Architecture &amp; Implementation</h4>
+          <p class="modal-details-text" id="modal-architecture"></p>
+        </div>
+
+        <div>
+          <h4 class="modal-section-title">Measurable Business &amp; Engineering Impact</h4>
+          <p class="modal-details-text" id="modal-metrics" style="font-family: var(--font-mono); font-size: 0.88rem; color: var(--accent-primary);"></p>
+        </div>
+
+        <div>
+          <h4 class="modal-section-title">Tech Stack &amp; Standards</h4>
+          <div class="card-tech-stack" id="modal-tags"></div>
+        </div>
+
+        <div style="margin-top: 1rem; display: flex; justify-content: flex-end;">
+          <a id="modal-action-btn" href="#" class="btn btn-primary" style="display: none;">
+            <span>Visit Live Site</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
